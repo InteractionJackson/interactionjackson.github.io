@@ -1,0 +1,136 @@
+.TTFirsNeueMedium {
+    font-family: TTFirsNeueMedium;
+}.TTFirsNeueRegular {
+    font-family: TTFirsNeueRegular;
+}
+
+html, body {
+    font-size: 16px;
+    font-family: "TTFirsNeueRegular", Helvetica, Arial, Sans-Serif;
+    color: #5b616b;
+    background-color: #f1f1f1;
+}
+
+
+h1, h2, p, a {
+    font-family: "TTFirsNeueRegular";
+}
+
+h3, h4, h5{
+    font-family: TTFirsNeueMedium;
+}
+
+strong {
+    font-family: TTFirsNeueMedium;
+}
+
+h1 {
+    color: #323a45; 
+}
+
+h2, h3, h4, h5 {
+    color: #5b616b;
+}
+
+p {
+    color: #5b616b;
+}
+
+a {
+    color: #105BD8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0b3d91;
+}
+
+/* When the browser is at least 320px and above */
+@media screen and (min-width: 320px) { 
+
+.work-desc{
+    margin: auto;
+}
+
+.case-img img {
+    background-color: #F5F5F7;
+}
+
+.nav-link {
+    color: #494440 ;
+}
+
+.navlink:hover {
+    color: #105BD8 !important;
+}
+
+h1, h2 {
+    font-size: 2.2rem;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: 1.4rem !important;
+    line-height: 170%;
+}
+
+p {
+    line-height: 170%;
+    font-size: 1.4rem;
+}
+
+.nav-pills li {
+    vertical-align: middle;
+}
+
+.job-desc h2 {
+    font-family: TTFirsNeueMedium;
+    font-size: 1.75rem;
+    line-height: 150%;
+    color: #323a45; 
+}
+
+.job-desc p {
+    font-size: 1.5rem;
+    line-height: 170%;
+}
+
+.work-desc p {
+    font-size: 1.3rem;
+}
+
+.seperator {
+    height: 40px;
+}
+
+}
+
+/* When the browser is at least 320px and above */
+@media screen and (min-width: 600px) {
+
+h1, h2 {
+    font-size: 3.5rem;
+    line-height: 140%;
+}
+
+}
+
+/* When the browser is at least 320px and above */
+@media screen and (min-width: 1200px) {
+
+
+h1, h2 {
+    font-size: 4.2rem;
+    line-height: 140%;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+}
