@@ -11,16 +11,11 @@ html, body {
     background-color: #f1f1f1;
 }
 
-
 h1, h2, p, a {
     font-family: "TTFirsNeueRegular";
 }
 
-h3, h4, h5{
-    font-family: TTFirsNeueMedium;
-}
-
-strong {
+h3, h4, h5, strong{
     font-family: TTFirsNeueMedium;
 }
 
@@ -144,12 +139,10 @@ h3 {
     margin-bottom: 0rem;
 }
 
-
 }
 
 /* When the browser is at least 320px and above */
 @media screen and (min-width: 1200px) {
-
 
 h1, h2 {
     font-size: 4.2rem;
@@ -175,7 +168,6 @@ h3 {
     padding-right: 3rem!important;
     padding-left: 3rem!important;
 }
-
 
 .bg-white {
     background-color: #fff;
