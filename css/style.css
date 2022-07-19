@@ -25,11 +25,11 @@ strong {
 }
 
 h1 {
-    color: #323a45; 
+    color: #212121; 
 }
 
 h2, h3, h4, h5 {
-    color: #5b616b;
+    color: #323a45;
 }
 
 p {
@@ -75,7 +75,7 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem ;
     line-height: 170%;
 }
 
@@ -84,11 +84,19 @@ p {
     font-size: 1.4rem;
 }
 
+.px-5 {
+    padding-right: .5rem!important;
+    padding-left: .5rem!important;
+}
+
+.margin-nudge-bottom {
+    margin-bottom: 1rem;
+}
+
 .job-desc h2 {
     font-family: TTFirsNeueMedium;
     font-size: 1.75rem;
     line-height: 150%;
-    color: #323a45; 
 }
 
 .job-desc p {
@@ -114,8 +122,26 @@ h1, h2 {
     line-height: 140%;
 }
 
+h3 {
+    font-size: 1.5rem;
+    line-height: 140%;
+}
+
+.work-desc p {
+    font-size: 1.1rem;
+}
+
 .nav-pills .nav-link {
     font-size: 1rem;
+}
+
+.px-5 {
+    padding-right: 1.5rem!important;
+    padding-left: 1.5rem!important;
+}
+
+.margin-nudge-bottom {
+    margin-bottom: 0rem;
 }
 
 
@@ -129,6 +155,27 @@ h1, h2 {
     font-size: 4.2rem;
     line-height: 140%;
 }
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 140%;
+}
+
+.work-desc p {
+    font-size: 1.5rem;
+}
+
+.job-desc h3 {
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: #323a45; 
+}
+
+.px-5 {
+    padding-right: 3rem!important;
+    padding-left: 3rem!important;
+}
+
 
 .bg-white {
     background-color: #fff;
