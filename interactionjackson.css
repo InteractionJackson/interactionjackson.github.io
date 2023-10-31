@@ -21,11 +21,10 @@
 
 
 @font-face {
-  font-family: "TTFirsNeueMedium";
-  src: url("webFonts/TTFirsNeueMedium/font.woff2") format('woff2'), url('webFonts/TTFirsNeueMedium/font.woff') format('woff');
+  font-family: "TTFirsNeueDemiBold";
+  src: url('webFonts/TTFirsNeueDemiBold/font.woff2') format('woff2'), url('webFonts/TTFirsNeueDemiBold/font.woff') format('woff');
 }
 @font-face {
   font-family: "TTFirsNeueRegular";
   src: url('webFonts/TTFirsNeueRegular/font.woff2') format('woff2'), url('webFonts/TTFirsNeueRegular/font.woff') format('woff');
 }
-
