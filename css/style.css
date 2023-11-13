@@ -9,10 +9,10 @@ html, body {
     font-size: 16px;
     font-family: "TTFirsNeueRegular", Helvetica, Arial, Sans-Serif;
     color: #5b616b;
-    background-color: #f1f1f1;
+    background-color: #fff;
 }
 
-p, a {
+p {
     font-family: "TTFirsNeueRegular";
 }
 
@@ -21,28 +21,55 @@ h1, h2, h3, h4, h5, strong{
 }
 
 h1 {
-    color: #212121; 
+    color: #10472C; 
+    line-height: 110%; /* 70.4px */
 }
 
 h2, h3, h4, h5 {
-    color: #323a45;
+    color: #10472C;
 }
 
 p {
     color: #5b616b;
+    line-height: 170%;
 }
 
 a {
-    color: #105BD8;
+    color: #1C7D4D;
     text-decoration: none;
 }
 
 a:hover {
-    color: #0b3d91;
+    color: #10472C;
+}
+
+.work-bg {
+    background-color: #F9FBFA;
+    border: 1px solid #E3EDE8;;
 }
 
 /* When the browser is at least 320px and above */
 @media screen and (min-width: 320px) { 
+
+.intro {
+    font-size: 1.5rem;
+}
+
+.heading {
+    color: #10472C;
+}
+
+.sub-heading {
+    color: #7D9C8D;
+}
+
+.sub-heading a {
+    color: #7D9C8D;
+}
+
+.sub-heading a:hover {
+    color: #587466;
+}
 
 .work-desc{
     margin: auto;
@@ -53,11 +80,11 @@ a:hover {
 }
 
 .nav-link {
-    color: #494440 ;
+    color: #1C7D4D ;
 }
 
-.navlink:hover {
-    color: #105BD8 !important;
+.nav-link:hover {
+    color: #10472C !important;
 }
 
 .nav-pills .nav-link {
@@ -66,7 +93,6 @@ a:hover {
 
 h1, h2 {
     font-size: 2.2rem;
-    line-height: 150%;
     letter-spacing: -.1rem;
 }
 
@@ -76,7 +102,6 @@ h3 {
 }
 
 p {
-    line-height: 170%;
     font-size: 1.4rem;
 }
 
@@ -115,7 +140,6 @@ p {
 
 h1, h2 {
     font-size: 3.5rem;
-    line-height: 140%;
 }
 
 h3 {
@@ -147,7 +171,6 @@ h3 {
 
 h1, h2 {
     font-size: 4.2rem;
-    line-height: 140%;
 }
 
 h3 {
