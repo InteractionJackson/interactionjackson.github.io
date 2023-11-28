@@ -21,38 +21,38 @@ h1, h2, h3, h4, h5, strong{
 }
 
 h1 {
-    color: #10472C; 
-    line-height: 110%; /* 70.4px */
+    color: #1B030A; 
+    line-height: 100%; /* 70.4px */
 }
 
 h2, h3, h4, h5 {
-    color: #10472C;
+    color: #1B030A;
 }
 
 p {
-    color: #5b616b;
+    color: #616161;
     line-height: 170%;
 }
 
 a {
-    color: #1C7D4D;
+    color: #E84574;
     text-decoration: none;
 }
 
 a:hover {
-    color: #10472C;
+    color: #DE1C54;
 }
 
 .work-bg {
-    background-color: #F9FBFA;
-    border: 1px solid #E3EDE8;;
+    background-color: #F5F5F7;
+   /* border: 1px solid #EBEBEB; */
 }
 
 /* When the browser is at least 320px and above */
 @media screen and (min-width: 320px) { 
 
 .intro {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .heading {
@@ -60,15 +60,7 @@ a:hover {
 }
 
 .sub-heading {
-    color: #7D9C8D;
-}
-
-.sub-heading a {
-    color: #7D9C8D;
-}
-
-.sub-heading a:hover {
-    color: #587466;
+    color: #5C5C5C;
 }
 
 .work-desc{
@@ -76,15 +68,15 @@ a:hover {
 }
 
 .case-img img {
-    background-color: #F5F5F7;
+    background-color: #3B0716;
 }
 
 .nav-link {
-    color: #1C7D4D ;
+    color: #828282 ;
 }
 
 .nav-link:hover {
-    color: #10472C !important;
+    color: #DE1C54 !important;
 }
 
 .nav-pills .nav-link {
@@ -117,12 +109,12 @@ p {
 .job-desc h2 {
     font-family: "TTFirsNeueDemiBold";
     font-size: 1.75rem;
-    line-height: 150%;
+    line-height: 100%;
 }
 
 .job-desc p {
-    font-size: 1.5rem;
-    line-height: 170%;
+    font-size: 1.2rem;
+    line-height: 160%;
 }
 
 .work-desc p {
@@ -179,12 +171,12 @@ h3 {
 }
 
 .work-desc p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .job-desc h3 {
-    font-size: 1.5rem;
-    line-height: 150%;
+    font-size: 1.3rem;
+    line-height: 110%;
     color: #323a45; 
 }
 
