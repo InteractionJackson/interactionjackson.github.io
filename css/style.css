@@ -35,12 +35,12 @@ p {
 }
 
 a {
-    color: #E84574;
+    color: #20AC21;
     text-decoration: none;
 }
 
 a:hover {
-    color: #DE1C54;
+    color: #1B921C;
 }
 
 .work-bg {
@@ -56,11 +56,11 @@ a:hover {
 }
 
 .heading {
-    color: #10472C;
+    color: #20AC21;
 }
 
 .sub-heading {
-    color: #5C5C5C;
+    color: #20AC21;
 }
 
 .work-desc{
@@ -72,11 +72,11 @@ a:hover {
 }
 
 .nav-link {
-    color: #828282 ;
+    color: #1B030A;
 }
 
 .nav-link:hover {
-    color: #DE1C54 !important;
+    color: #1B921C !important;
 }
 
 .nav-pills .nav-link {
