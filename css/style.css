@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, strong{
 h1 {
     color: #1B030A; 
     line-height: 100%; /* 70.4px */
+    letter-spacing: -.1rem;
 }
 
 h2, h3, h4, h5 {
@@ -35,12 +36,23 @@ p {
 }
 
 a {
-    color: #20AC21;
+    color: #616161;
     text-decoration: none;
+    font-family: "TTFirsNeueDemiBold";
 }
 
 a:hover {
-    color: #1B921C;
+     -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.text-gradient {
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .work-bg {
@@ -76,7 +88,11 @@ a:hover {
 }
 
 .nav-link:hover {
-    color: #1B921C !important;
+     -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+
 }
 
 .nav-pills .nav-link {
@@ -85,7 +101,6 @@ a:hover {
 
 h1, h2 {
     font-size: 2.2rem;
-    letter-spacing: -.1rem;
 }
 
 h3 {
@@ -162,7 +177,7 @@ h3 {
 @media screen and (min-width: 1200px) {
 
 h1, h2 {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
 }
 
 h3 {
