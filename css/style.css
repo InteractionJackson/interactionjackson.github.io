@@ -14,10 +14,11 @@ html, body {
 
 p {
     font-family: 'Inter', sans-serif;
+    font-weight: 300;
     color: #6A6A6A;
     line-height: 170%;
     line-height: 170%; /* 40.8px */
-    letter-spacing: -0.5px;
+    letter-spacing: -0.9px;
 }
 
 h1, h2, h3, h4, h5, strong{
