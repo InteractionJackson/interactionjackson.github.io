@@ -176,6 +176,10 @@ p {
     height: 40px;
 }
 
+.svg-button {
+    margin-left: 12px;
+}
+
 }
 
 /* When the browser is at least 320px and above */
@@ -230,11 +234,11 @@ h3 {
 }
 
 .work-desc p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .job-desc h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 110%;
     color: #323a45; 
 }
