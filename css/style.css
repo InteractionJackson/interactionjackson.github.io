@@ -40,14 +40,25 @@ h2, h3, h4, h5 {
 }
 
 a {
-    color: #616161;
-    text-decoration: none;
+    color: #02733B;
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 a:hover {
     color: #1C1C1C;
+}
+
+.name {
+    color: #1A1A1A;
+    font-size: 1.5rem;
+    font-family: "TTFirsNeueDemiBold";
+}
+
+.nav-link {
+    color: #828282;
+    font-family: "TTFirsNeueDemiBold";
 }
 
 .intro a:hover {
@@ -55,6 +66,7 @@ a:hover {
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     -webkit-background-clip: text;
     background-clip: text;
+    
 }
 
 .text-gradient {
@@ -65,25 +77,27 @@ a:hover {
 }
 
 .work {
-    background-color: #FCFCFC;
-   border: 1px solid #EBEBEB;
-   margin-top: 90px;
-   overflow: hidden;
+    background-color: #F6F5F4;
+    border: 1px solid #E8E6E3;
+    margin-top: 90px;
+    overflow: hidden;
 }
 
 .pill-button {
     display: inline-block;
-    background: #f2f2f2;
-    border-radius: 8px;
-    transition: transform .2s;
+    background: rgba(4, 222, 113, 0.86);
+    border: 2px solid #513E3E;
+    box-shadow: 2px 4px 0px #513E3E;
+    border-radius: 32px;
     padding: 12px 24px;
     align-items: center;
     justify-content: center;
 }
 
+
 .pill-button:hover {
-    background-color: #EBEBEB;
-    color: #1C1C1C;
+    background: #1AC66F;
+    color: #fff;
 }
 
 
@@ -102,17 +116,8 @@ a:hover {
     color: #20AC21;
 }
 
-.work-desc{
-    padding: 5rem 6.5rem 5rem 6.5rem;
-}
-
 .case-img {
     
-}
-
-.nav-link {
-    color: #828282;
-    font-family: "TTFirsNeueDemiBold";
 }
 
 .nav-link:hover {
@@ -132,12 +137,12 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 1.4rem ;
-    line-height: 170%;
+    font-size: 1.5rem ;
+    line-height: 120%;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .pill-button {
@@ -148,8 +153,8 @@ p {
     letter-spacing: 0.1rem;
 }
 
-.pill-button:hover {
-
+.work-desc{
+    padding: 2rem;
 }
 
 .px-5 {
@@ -173,7 +178,7 @@ p {
 }
 
 .work-desc p {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .seperator {
@@ -198,12 +203,16 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 140%;
 }
 
+.work-desc{
+    padding: 3rem;
+}
+
 .work-desc p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .nav-pills .nav-link {
@@ -233,12 +242,17 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
-    line-height: 110%;
+    font-size: 2rem;
+    line-height: 130%;
+}
+
+.work-desc{
+    padding: 3.5rem;
 }
 
 .work-desc p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 170%;
 }
 
 .job-desc h3 {
