@@ -153,6 +153,10 @@ p {
     letter-spacing: 0.1rem;
 }
 
+h1 span {
+    background-color: #DBFEED;
+}
+
 .work-desc{
     padding: 2rem;
 }
@@ -164,6 +168,10 @@ p {
 
 .margin-nudge-bottom {
     margin-bottom: 1rem;
+}
+
+.experience-intro p {
+    font-weight: 500;
 }
 
 .job-desc h2 {
@@ -242,7 +250,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.3rem;
     line-height: 130%;
 }
 
