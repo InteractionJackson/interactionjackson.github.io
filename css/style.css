@@ -1,8 +1,26 @@
 .TTFirsNeueDemiBold {
-	font-family: TTFirsNeueDemiBold;
+    font-family: TTFirsNeueDemiBold;
 }
-}.TTFirsNeueRegular {
-	font-family: TTFirsNeueRegular;
+.TTFirsNeueRegular {
+    font-family: TTFirsNeueRegular;
+}
+.TTFirsNeueBold {
+    font-family: TTFirsNeueBold;
+}
+.TTFirsNeueLight {
+    font-family: TTFirsNeueLight;
+}
+.TTFirsNeueItalic {
+    font-family: TTFirsNeueItalic;
+}
+.TTFirsNeueDemiBoldItalic {
+    font-family: TTFirsNeueDemiBoldItalic;
+}
+.TTFirsNeueBoldItalic {
+    font-family: TTFirsNeueBoldItalic;
+}
+.TTFirsNeueLightItalic {
+    font-family: TTFirsNeueLightItalic;
 }
 
 html, body {
@@ -21,27 +39,24 @@ p {
     letter-spacing: -0.6px;
 }
 
-h1, h2, h3, h4, h5, strong{
+h1, h2 {
     font-family: "TTFirsNeueDemiBold";
-}
-
-h1 {
     color: #1B030A; 
     line-height: 120%; /* 70.4px */
     letter-spacing: -.05rem;
 }
 
-h1 a {
-    font-family: "TTFirsNeueDemiBold";
+h3, h4, h5 {
+    font-family: TTFirsNeueRegular;
+    color: #1B030A;
 }
 
-h2, h3, h4, h5 {
-    color: #1B030A;
+strong {
+    font-weight: 500;
 }
 
 a {
     color: #02733B;
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-decoration: none;
 }
@@ -50,15 +65,9 @@ a:hover {
     color: #1C1C1C;
 }
 
-.name {
-    color: #1A1A1A;
-    font-size: 1.5rem;
-    font-family: "TTFirsNeueDemiBold";
-}
-
 .nav-link {
-    color: #828282;
-    font-family: "TTFirsNeueDemiBold";
+    color: #707070;
+    font-family: "TTFirsNeueRegular";
 }
 
 .intro a:hover {
@@ -100,6 +109,11 @@ a:hover {
     color: #fff;
 }
 
+.subtitle {
+    color: #707070;
+    font-family: TTFirsNeueRegular;
+}
+
 
 /* When the browser is at least 320px and above */
 @media screen and (min-width: 320px) { 
@@ -134,11 +148,17 @@ a:hover {
 
 h1, h2 {
     font-size: 2.2rem;
+    line-height: 124%;
 }
 
 h3 {
-    font-size: 1.5rem ;
+    font-size: 1.5rem;
     line-height: 120%;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    line-height: 140%;
 }
 
 p {
@@ -215,6 +235,11 @@ h3 {
     line-height: 140%;
 }
 
+.subtitle {
+    font-size: 1.8rem;
+    line-height: 140%;
+}
+
 .work-desc{
     padding: 3rem;
 }
@@ -224,7 +249,7 @@ h3 {
 }
 
 .nav-pills .nav-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .px-5 {
@@ -250,7 +275,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 130%;
 }
 
@@ -261,12 +286,6 @@ h3 {
 .work-desc p {
     font-size: 1.1rem;
     line-height: 170%;
-}
-
-.job-desc h3 {
-    font-size: 1.2rem;
-    line-height: 110%;
-    color: #323a45; 
 }
 
 .px-5 {
