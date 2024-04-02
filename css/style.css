@@ -36,7 +36,7 @@ p {
     color: #6A6A6A;
     line-height: 170%;
     line-height: 170%; /* 40.8px */
-    letter-spacing: -0.6px;
+    letter-spacing: -0.3px;
 }
 
 h1, h2 {
@@ -165,7 +165,16 @@ h3 {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 170%;
+}
+
+.metrics p {
+    font-size: 1rem;
+}
+
+.metrics h3 {
+    font-size: 1.8rem;
 }
 
 .pill-button {
@@ -197,20 +206,22 @@ h1 span {
     font-weight: 500;
 }
 
+.quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.attribution {
+    font-size: 1rem;
+}
+
 .job-desc h2 {
     font-family: "TTFirsNeueDemiBold";
     font-size: 1.75rem;
     line-height: 100%;
 }
 
-.job-desc p {
-    font-size: 1.2rem;
-    line-height: 160%;
-}
-
-.work-desc p {
-    font-size: 1rem;
-}
 
 .seperator {
     height: 40px;
@@ -247,10 +258,6 @@ h3 {
     padding: 3rem;
 }
 
-.work-desc p {
-    font-size: 1rem;
-}
-
 .nav-pills .nav-link {
     font-size: 1.2rem;
 }
@@ -284,11 +291,6 @@ h3 {
 
 .work-desc{
     padding: 3.5rem;
-}
-
-.work-desc p {
-    font-size: 1.1rem;
-    line-height: 170%;
 }
 
 .px-5 {
