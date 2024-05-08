@@ -32,8 +32,8 @@ html, body {
 
 p {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    color: #6A6A6A;
+    font-weight: 400;
+    color: #353535;
     line-height: 170%;
     line-height: 170%; /* 40.8px */
     letter-spacing: -0.3px;
@@ -43,7 +43,7 @@ h1, h2 {
     font-family: "TTFirsNeueDemiBold";
     color: #1B030A; 
     line-height: 120%; /* 70.4px */
-    letter-spacing: -.05rem;
+    letter-spacing: -.04rem;
 }
 
 h3, h4, h5 {
@@ -62,7 +62,7 @@ a {
 }
 
 a:hover {
-    color: #1C1C1C;
+    color: #025A2E;
 }
 
 .nav-link {
@@ -74,19 +74,11 @@ a:hover {
     color: #707070; 
 }
 
-.intro a:hover {
-     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    
-}
-
-.text-gradient {
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
+.intro {
+    line-height: 170%;
+    /* or 34px */
+    letter-spacing: -0.04em;
+    font-weight: 300;
 }
 
 .work {
@@ -189,6 +181,11 @@ h1 span {
     background-color: #DBFEED;
 }
 
+.highlight {
+    display: inline-flex;
+    height: 48px;
+}
+
 .work-desc{
     padding: 2rem;
 }
@@ -257,6 +254,11 @@ h3 {
     line-height: 140%;
 }
 
+.highlight {
+    display: inline-block;
+    height: 72px;
+}
+
 .work-desc{
     padding: 3rem;
 }
@@ -281,6 +283,7 @@ h3 {
 
 h1{
     font-size: 4rem;
+    line-height: 116%;
 }
 
 h2 {
@@ -290,6 +293,11 @@ h2 {
 h3 {
     font-size: 1.4rem;
     line-height: 130%;
+}
+
+.highlight {
+    display: inline-block;
+    height: 72px;
 }
 
 .work-desc{
