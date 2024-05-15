@@ -33,10 +33,9 @@ html, body {
 p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: #353535;
-    line-height: 170%;
-    line-height: 170%; /* 40.8px */
+    color: #64748B;
     letter-spacing: -0.3px;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2 {
@@ -78,12 +77,12 @@ a:hover {
     line-height: 170%;
     /* or 34px */
     letter-spacing: -0.04em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .work {
-    background-color: #F6F5F4;
-    border: 1px solid #E8E6E3;
+    background-color: #F8FAFC;
+    border: 1px solid #E6EDF4;
     overflow: hidden;
 }
 
@@ -157,8 +156,8 @@ h3 {
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 170%;
+    font-size: 1.15rem;
+    line-height: 162%; /* 40.8px */
 }
 
 .metrics p {
