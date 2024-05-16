@@ -39,15 +39,16 @@ p {
 }
 
 h1, h2 {
-    font-family: "TTFirsNeueDemiBold";
+    font-family: 'TTFirsNeueDemiBold';
+    font-weight: normal;
     color: #1B030A; 
     line-height: 120%; /* 70.4px */
-    letter-spacing: -.04rem;
 }
 
 h3, h4, h5 {
-    font-family: TTFirsNeueRegular;
-    color: #1B030A;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: rgb(15 23 42);
 }
 
 strong {
@@ -55,9 +56,8 @@ strong {
 }
 
 a {
-    color: #02733B;
-    font-weight: 400;
-    text-decoration: none;
+    color: rgb(79 70 229);
+    text-decoration: underline;
 }
 
 a:hover {
@@ -65,8 +65,8 @@ a:hover {
 }
 
 .nav-link {
-    color: #707070;
-    font-family: "TTFirsNeueRegular";
+    color: rgb(15 23 42);
+    font-family: 'Inter', sans-serif;
 }
 
 .section-title {
@@ -88,11 +88,10 @@ a:hover {
 
 .pill-button {
     display: inline-block;
-    background: rgba(4, 222, 113, 0.86);
-    border: 2px solid #513E3E;
-    box-shadow: 2px 4px 0px #513E3E;
-    border-radius: 32px;
-    padding: 12px 24px;
+    background-color: #fff0;
+    border: 1px solid #e5e7eb;
+    border-radius: .375rem;
+    padding: .5rem .75rem;
     align-items: center;
     justify-content: center;
 }
@@ -137,7 +136,7 @@ a:hover {
 }
 
 .nav-pills .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 h1, h2 {
@@ -161,7 +160,9 @@ p {
 }
 
 .metrics p {
-    font-size: 1rem;
+    font-size: .9rem;
+    color: rgb(79 70 229);
+    font-weight: 600;
 }
 
 .metrics h3 {
@@ -170,10 +171,8 @@ p {
 
 .pill-button {
     font-size: .8rem;
-    font-weight: 700;
-    color: #545454;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: rgb(15 23 42);
 }
 
 h1 span {
@@ -263,7 +262,8 @@ h3 {
 }
 
 .nav-pills .nav-link {
-    font-size: 1.2rem;
+    font-size: .9rem;
+    font-weight: 500;
 }
 
 .px-5 {
@@ -290,7 +290,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 130%;
 }
 
