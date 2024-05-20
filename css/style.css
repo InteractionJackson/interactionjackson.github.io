@@ -56,12 +56,12 @@ strong {
 }
 
 a {
-    color: rgb(79 70 229);
+    color: #4F46E5;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #025A2E;
+    color: #261CC9;
 }
 
 .nav-link {
@@ -88,17 +88,18 @@ a:hover {
 
 .pill-button {
     display: inline-block;
-    background-color: #fff0;
-    border: 1px solid #e5e7eb;
+    background-color: #4F46E5;
+    border: 1px solid #261CC9;
     border-radius: .375rem;
     padding: .5rem .75rem;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 
 .pill-button:hover {
-    background: #1AC66F;
+    background: #261CC9;
     color: #fff;
 }
 
@@ -172,7 +173,6 @@ p {
 .pill-button {
     font-size: .8rem;
     font-weight: 600;
-    color: rgb(15 23 42);
 }
 
 h1 span {
