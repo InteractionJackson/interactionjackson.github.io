@@ -49,6 +49,7 @@ h3{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: rgb(15 23 42);
+    letter-spacing: -.5px;
 }
 
 h4, h5 {
@@ -61,7 +62,7 @@ strong {
 
 a {
     color: #4F46E5;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {
@@ -69,7 +70,7 @@ a:hover {
 }
 
 .nav-link {
-    color: rgb(15 23 42);
+    color: #8893AF;
     font-family: 'Inter', sans-serif;
 }
 
@@ -188,7 +189,7 @@ p {
 }
 
 h1 span {
-    background-color: #DBFEED;
+    background-color: rgba(229, 228, 251, 0.8);;
 }
 
 .highlight {
@@ -293,12 +294,12 @@ h3 {
 @media screen and (min-width: 1200px) {
 
 h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 116%;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h3 {
