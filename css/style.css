@@ -27,7 +27,7 @@ html, body {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
     color: #5b616b;
-    background-color: #fff;
+    background-color: #f6f9fc;
 }
 
 p {
@@ -48,7 +48,7 @@ h1, h2 {
 h3{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    color: rgb(15 23 42);
+    color: rgb(54 71 115);
     letter-spacing: -.5px;
 }
 
@@ -86,9 +86,10 @@ a:hover {
 }
 
 .work {
-    background-color: #F8FAFC;
-    border: 1px solid #E6EDF4;
+    background-color: #fff;
+    /* border: 1px solid #E6EDF4; */
     overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .pill-button {
@@ -117,6 +118,47 @@ a:hover {
     border: none;
     color: #64748B;
 }
+
+.avatar-gradient {
+    background: linear-gradient(270deg, #8EC5FC, #E0C3FC);
+    background-size: 800% 800%; /* Big background to create a smooth effect */
+    animation: gradientAnimation 15s ease infinite;
+    border-radius: 100%;
+}
+
+/*
+@keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+}
+*/
+
+.fade-in {
+            opacity: 0;
+            transform: translateX(20px); /* Move the element down by 20px */
+            transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Animate both opacity and position */
+        }
+        .visible {
+            opacity: 1;
+            transform: translateX(0); /* Move the element to its original position */
+        }
+        /* Example styling for the container and text */
+        .content {
+            height: 100vh; /* Full height for scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
 
 /* When the browser is at least 320px and above */
 @media screen and (min-width: 320px) { 
@@ -155,8 +197,10 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 120%;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 h4 {
@@ -180,7 +224,9 @@ p {
 }
 
 .metrics h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    letter-spacing: normal;
 }
 
 .pill-button {
@@ -303,7 +349,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 130%;
 }
 
