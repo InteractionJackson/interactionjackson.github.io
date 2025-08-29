@@ -74,6 +74,9 @@ a:hover {
     font-family: 'Inter', sans-serif;
 }
 
+nav ul, nav li { list-style: none; }
+
+
 .section-title {
     color: #707070; 
 }
