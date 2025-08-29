@@ -74,6 +74,15 @@ a:hover {
     font-family: 'Inter', sans-serif;
 }
 
+/* 1) Bring back default bullets everywhere in the article */
+article :where(ul, ol) { list-style: revert; padding-left: 1.25rem; margin: .5rem 0; }
+
+/* 2) Make sure LIs are actually list items (not flex/grid from a reset) */
+article li { display: list-item; }
+
+/* 3) If a parent container clips markers, keep them inside the box */
+article :where(ul, ol) { list-style-position: inside; } /* or remove overflow on the parent */
+
 nav ul, nav li { list-style: none; }
 
 
