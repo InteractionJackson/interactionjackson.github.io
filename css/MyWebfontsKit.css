@@ -8,72 +8,29 @@
  * 
  * You may obtain a valid license at the URLs below.
  * 
- * Webfont: undefined by undefined
- * URL: https://www.myfonts.comundefined
- * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
- *
- * Webfont: undefined by undefined
- * URL: https://www.myfonts.comundefined
- * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
- *
- * Webfont: undefined by undefined
- * URL: https://www.myfonts.comundefined
- * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
- *
- * Webfont: undefined by undefined
- * URL: https://www.myfonts.comundefined
- * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
- *
- * Webfont: undefined by undefined
- * URL: https://www.myfonts.comundefined
- * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
- *
- * Webfont: undefined by undefined
- * URL: https://www.myfonts.comundefined
- * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
- *
- * Webfont: undefined by undefined
- * URL: https://www.myfonts.comundefined
- * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
- *
- * Webfont: undefined by undefined
- * URL: https://www.myfonts.comundefined
- * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
- * 
- * © 2024 MyFonts Inc. */
+ * Webfont: TT Commons Pro Regular by TypeType
+ * URL: https://www.myfonts.com/collections/typetype-foundry
+
+ * Webfont: TT Commons Pro Bold by TypeType
+ * URL: https://www.myfonts.com/collections/typetype-foundry
+
+ * Webfont: Brigent Display by Masa Type
+ * URL: https://www.myfonts.com/collections/masa-type-foundry
+ 
+ * © 2025 MyFonts Inc. */
 
 
   
 @font-face {
-  font-family: "TTFirsNeueItalic";
-  src: url('webFonts/TTFirsNeueItalic/font.woff2') format('woff2'), url('webFonts/TTFirsNeueItalic/font.woff') format('woff');
+  font-family: "TTCommonsProBold";
+  src: url('webFonts/TTCommonsProBold/font.woff2') format('woff2'), url('../webFonts/TTCommonsProBold/font.woff') format('woff');
 }
 @font-face {
-  font-family: "TTFirsNeueRegular";
-  src: url('webFonts/TTFirsNeueRegular/font.woff2') format('woff2'), url('webFonts/TTFirsNeueRegular/font.woff') format('woff');
+  font-family: "BrigentDisplay";
+  src: url('webFonts/BrigentDisplay/font.woff2') format('woff2'), url('../webFonts/BrigentDisplay/font.woff') format('woff');
 }
 @font-face {
-  font-family: "TTFirsNeueBold";
-  src: url('webFonts/TTFirsNeueBold/font.woff2') format('woff2'), url('webFonts/TTFirsNeueBold/font.woff') format('woff');
-}
-@font-face {
-  font-family: "TTFirsNeueLightItalic";
-  src: url('webFonts/TTFirsNeueLightItalic/font.woff2') format('woff2'), url('webFonts/TTFirsNeueLightItalic/font.woff') format('woff');
-}
-@font-face {
-  font-family: "TTFirsNeueBoldItalic";
-  src: url('webFonts/TTFirsNeueBoldItalic/font.woff2') format('woff2'), url('webFonts/TTFirsNeueBoldItalic/font.woff') format('woff');
-}
-@font-face {
-  font-family: "TTFirsNeueDemiBold";
-  src: url('webFonts/TTFirsNeueDemiBold/font.woff2') format('woff2'), url('webFonts/TTFirsNeueDemiBold/font.woff') format('woff');
-}
-@font-face {
-  font-family: "TTFirsNeueDemiBoldItalic";
-  src: url('webFonts/TTFirsNeueDemiBoldItalic/font.woff2') format('woff2'), url('webFonts/TTFirsNeueDemiBoldItalic/font.woff') format('woff');
-}
-@font-face {
-  font-family: "TTFirsNeueLight";
-  src: url('webFonts/TTFirsNeueLight/font.woff2') format('woff2'), url('webFonts/TTFirsNeueLight/font.woff') format('woff');
+  font-family: "TTCommonsProRegular";
+  src: url('webFonts/TTCommonsProRegular/font.woff2') format('woff2'), url('../webFonts/TTCommonsProRegular/font.woff') format('woff');
 }
 

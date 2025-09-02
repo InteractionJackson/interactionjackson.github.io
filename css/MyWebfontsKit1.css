@@ -1,0 +1,36 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Brakle Medium by Graptail
+ * URL: https://www.myfonts.com/collections/graptail-foundry
+
+ * Webfont: Brakle Bold by Graptail
+ * URL: https://www.myfonts.com/collections/graptail-foundry
+
+ * Webfont: Brakle Semi Bold by Graptail
+ * URL: https://www.myfonts.com/collections/graptail-foundry
+ 
+ * © 2025 MyFonts Inc. */
+
+
+  
+@font-face {
+  font-family: "BrakleMedium";
+  src: url('webFonts/BrakleMedium/font.woff2') format('woff2'), url('../webFonts/BrakleMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "BrakleSemiBold";
+  src: url('webFonts/BrakleSemiBold/font.woff2') format('woff2'), url('../webFonts/BrakleSemiBold/font.woff2') format('woff');
+}
+@font-face {
+  font-family: "BrakleBold";
+  src: url('webFonts/BrakleBold/font.woff2') format('woff2'), url('../webFonts/BrakleBold/font.woff') format('woff');
+}
+
