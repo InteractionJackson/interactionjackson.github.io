@@ -52,6 +52,10 @@ a:hover {
     color: #261CC9;
 }
 
+.btn-light {
+    font-family: TTCommonsProBold;
+}
+
 .nav-link {
     color: #8893AF;
     font-family: TTCommonsProBold, sans-serif;
@@ -180,9 +184,14 @@ ul {
     font-size: 1rem;
 }
 
-h1, h2 {
+h1{
+    font-size: 4.5rem;
+    line-height: 72%;
+}
+
+h2 {
     font-size: 3rem;
-    line-height: 100%;
+    line-height: 72%;
 }
 
 h3 {
@@ -286,20 +295,13 @@ h1 span {
 /* When the browser is at least 320px and above */
 @media screen and (min-width: 600px) {
 
-h1 {
-    font-size: 3.5rem;
-}
 
 .intro-span {
     font-size: 2rem;
 }
 
-h2 {
-    font-size: 2rem;
-}
-
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 110%;
 }
 
