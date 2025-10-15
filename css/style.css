@@ -54,8 +54,63 @@ a:hover {
     color: #261CC9;
 }
 
+.btn {
+    font-family: TTCommonsProRegular;
+    font-size: 14px;
+    display: inline-block; /* restores default behavior */
+    width: auto;
+    letter-spacing: .4px;
+    border-radius: 1.0rem;
+}
+
+.btn-primary {
+    --bs-btn-bg: #09C49B;
+    --bs-btn-hover-bg: #0a2540;
+    --bs-btn-border-color: #09C49B;
+    --bs-btn-hover-border-color: #0a2540;
+}
+
 .btn-light {
-    font-family: TTCommonsProBold;
+    --bs-btn-border-color: #e7ebee;
+    --bs-btn-hover-bg: #c2ccd6;
+    --bs-btn-bg: #f9fafb;
+    --bs-btn-hover-border-color: #f9fafb;
+}
+
+.btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  /* padding, background, color, etc. */
+}
+
+.arrow-icon {
+  overflow: visible;
+  margin-left: 3px;
+  width: 6px;
+}
+
+.btn-arrow .arrow-icon {
+  margin-left: 0.5rem; /* or 8px, etc. */
+}
+
+.arrow-head {
+  transform: translateX(0);
+  transition: transform 0.15s ease-in-out;
+}
+
+.arrow-body {
+  opacity: 0;
+  transform: scaleX(1);
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.btn-arrow:hover .arrow-head {
+  transform: translateX(3px);
+}
+
+.btn-arrow:hover .arrow-body {
+  opacity: 1;
+  transform: scaleX(2);
 }
 
 .nav-link {
