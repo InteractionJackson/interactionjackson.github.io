@@ -116,16 +116,18 @@ a:hover {
 .nav-link {
     color: #8893AF;
     font-family: TTCommonsProBold, sans-serif;
-    text-transform: uppercase;
 }
 
 ul {
     color: #64748B;
 }
 
-
-
-
+.nav-shadow {
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);          /* the magic blur */
+    -webkit-backdrop-filter: blur(8px);  /* for Safari */
+}
 
 .section-title {
     color: #707070; 
@@ -138,7 +140,6 @@ ul {
 .work {
     background-color: #f6f9fc;
     /* border: 1px solid #E6EDF4; */
-    overflow: hidden;
     /*box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
 }
 
@@ -427,12 +428,13 @@ h3 {
 
 .work-desc{
     padding: 3rem;
+
 }
 
 .nav-pills .nav-link {
     font-size: .9rem;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 }
 
 .px-5 {
