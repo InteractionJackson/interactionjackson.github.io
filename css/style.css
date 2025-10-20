@@ -1,11 +1,11 @@
+.TTCommonsProDemiBold {
+    font-family: TTCommonsProDemiBold;
+}
 .TTCommonsProRegular {
     font-family: TTCommonsProRegular;
 }
 .TTCommonsProBold {
     font-family: TTCommonsProBold;
-}
-.BrigentDisplay {
-    font-family: BrigentDisplay;
 }
 
 html, body {
@@ -37,7 +37,7 @@ h2 {
 }
 
 h3, h4, h5 {
-    font-family: TTCommonsProBold;
+    font-family: TTCommonsProDemiBold;
     color: rgb(54 71 115);
 }
 
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .btn {
-    font-family: TTCommonsProRegular;
+    font-family: TTCommonsProDemiBold;
     font-size: 14px;
     display: inline-block; /* restores default behavior */
     width: auto;
@@ -115,7 +115,8 @@ a:hover {
 
 .nav-link {
     color: #8893AF;
-    font-family: TTCommonsProBold, sans-serif;
+    font-family: TTCommonsProDemiBold;
+    text-transform: uppercase;
 }
 
 ul {
@@ -180,19 +181,19 @@ ul {
 .underline-sketch1{
   background: url('../imgs/underline-1.png') bottom left no-repeat;
   background-size: 100% 0.3em;
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
 
 .underline-sketch2{
   background: url('../imgs/underline-2.png') bottom left no-repeat;
   background-size: 100% 0.3em;
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
 
 .underline-sketch3{
   background: url('../imgs/underline-3.png') bottom left no-repeat;
   background-size: 100% 0.3em;
-  padding-bottom: 8px;
+  padding-bottom: 0px;
 }
 
 .circle-sketch{
@@ -210,7 +211,6 @@ ul {
 .highlight-sketch2{
   background: url('../imgs/highlight2.png') bottom left no-repeat;
   background-size: 100% 1.2em;
-  padding-bottom: 4px;
 }
 
 
@@ -462,7 +462,7 @@ h1{
 
 h2 {
     font-size: 2.5rem;
-    line-height: 110%;
+    line-height: 120%;
 }
 
 h3 {

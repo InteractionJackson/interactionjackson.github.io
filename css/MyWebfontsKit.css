@@ -8,14 +8,14 @@
  * 
  * You may obtain a valid license at the URLs below.
  * 
+ * Webfont: TT Commons Pro DemiBold by TypeType
+ * URL: https://www.myfonts.com/collections/typetype-foundry
+
  * Webfont: TT Commons Pro Regular by TypeType
  * URL: https://www.myfonts.com/collections/typetype-foundry
 
  * Webfont: TT Commons Pro Bold by TypeType
  * URL: https://www.myfonts.com/collections/typetype-foundry
-
- * Webfont: Brigent Display by Masa Type
- * URL: https://www.myfonts.com/collections/masa-type-foundry
  
  * © 2025 MyFonts Inc. */
 
@@ -26,11 +26,11 @@
   src: url('webFonts/TTCommonsProBold/font.woff2') format('woff2'), url('../webFonts/TTCommonsProBold/font.woff') format('woff');
 }
 @font-face {
-  font-family: "BrigentDisplay";
-  src: url('webFonts/BrigentDisplay/font.woff2') format('woff2'), url('../webFonts/BrigentDisplay/font.woff') format('woff');
-}
-@font-face {
   font-family: "TTCommonsProRegular";
   src: url('webFonts/TTCommonsProRegular/font.woff2') format('woff2'), url('../webFonts/TTCommonsProRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "TTCommonsProDemiBold";
+  src: url('webFonts/TTCommonsProDemiBold/font.woff2') format('woff2'), url('../webFonts/TTCommonsProDemiBold/font.woff') format('woff');
 }
 
