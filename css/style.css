@@ -199,7 +199,6 @@ ul {
 .circle-sketch{
   background: url('../imgs/circle-1.png') bottom left no-repeat;
   background-size: 100% 1.2em;
-  padding-bottom: 6px;
 }
 
 .highlight-sketch{
@@ -259,6 +258,23 @@ ul {
             font-size: 24px;
             font-family: Arial, sans-serif;
         }
+
+.bg-mint {
+    background: #59F1BC;
+}
+
+.bg-teal {
+    background: #89DBE6;
+}
+
+.bg-orange {
+    background: #F1BC58;
+}
+
+.text-semibold {
+    font-family: TTCommonsProDemiBold;
+}
+
 
 /* When the browser is at least 320px and above */
 @media screen and (min-width: 320px) { 
