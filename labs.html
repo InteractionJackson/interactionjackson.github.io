@@ -77,68 +77,127 @@
       <div class="d-flex align-items-center mb-5">
             <img class="mx-auto" width="100%"  src="imgs/labs-intro.png">
       </div>
-      <div class="mb-5">
+    <div class="mb-5">
         <h2 class="mb-2">The challenge</h2>
-        <p>
-        Password Labs was born of a need to validate our ideas before we could build a business case for taking various concepts further. It just so happened the outcome of this need would go on to be utilised by product teams throughout 1Password.     
+        <p> 1Password was widely perceived as a password manager (fair enough , it’s in the name). But the product did far more: secure file storage, payment methods, identity documents, and more.</p>
+        <p>The problem was users didn’t know, and the product didn’t show.</p>
+        <p>And even when users were aware, the mental effort of learning what else they could store often outweighed the perceived value. From a behavioural standpoint, this made sense. Security feels abstract until it's not. And digital life admin is hard to prioritise, especially when most products aren't designed to reduce friction.</p>
+        <p>We needed a more human, context-aware way to surface the value of 1Password, before users churned or defaulted back to simpler tools like notes apps and screenshots.  
         </p>
+    </div>
+    <div class="mb-5">
+        <h2 class="mb-4">Framing the opportunity</h2>
+        <p class="">
+            We started with a behavioural insight:</p>
+        <p>“Human brains don’t run on logic any more than a horse runs on petrol.”</p>
+        <p>That quote (and some lovely white papers) helped us frame the real user problem: Digital security is emotionally distant, often scary, and rarely urgent, until it’s too late.</p>
         <div class="d-flex align-items-center mb-5">
             <img class="mx-auto" width="100%"  src="imgs/1p-early.png">
-      </div>
-      </div>
-
-      <div class="mb-5">
-        <h2 class="mb-4">Opportunity</h2>
-        <p class="mb-4">
-            The business opportunity here was to get closer to the humans using the product. They would have a mechanism that any team could utilise in order to validate their direction before shipping to production. 
-        </p>
-        <div class="d-flex align-items-center mb-5">
-            <img class="mx-auto" width="100%"  src="imgs/1p-testing.png">
         </div>
+        <p>With that in mind, I used a hypothesis-led approach to align the team:</p>
+        <p>🌱 Hypothesis v1:</p>
+        <blockquote class="blockquote fst-italic">
+            <p class="mb-0">"We believe that providing more utility within 1Password using clear paradigms will motivate people to store more than just their logins. This will increase product stickiness and perceived value."</p>
+        </blockquote>
+        <p>This gave us a structured way to tie user needs, business goals, and product telemetry together, which made it easier to gain leadership buy-in.
+        </p>
         <p class="mb-4">
             For the more engaged people using the product, they had opportunity to have direct say in our roadmap and help us shape the future of the experience. 
         </p>
       </div>
-      <div class="mb-5">
-        <h2 class="mb-2">Process</h2>
-        <p class="mb-4">
-            This really was something that was sketched on a napkin during an offsite for one of the concepts we would go on to utilise labs for. 
+    <div class="mb-5">
+        <h2 class="mb-2">Research and behavioural framing</h2>
+        <p class="">
+            We ran a series of moderated and unmoderated studies targeting new users within the first few weeks of onboarding. We explored questions like:
+            <ul>
+                <li class="pb-1">What’s confusing about setup?</li>
+                <li class="pb-1">Why don’t people store more than logins?</li>
+                <li class="pb-1">When do people feel “safe” or “in control</li>
+            </ul>
+        </p>
+            <div class="d-flex align-items-center mb-5">
+                <img class="mx-auto" width="100%"  src="imgs/1p-testing.png">
+            </div>
+            <p>To bring in behavioural thinking, I introduced BJ Fogg’s Behaviour Model to demonstrate why adding documents or IDs often failed:
+            <ul>
+                <li class="pb-1">Motivation was low </li>
+                <li class="pb-1">Ability was blocked by unclear UX</li>
+                <li class="pb-1">Triggers didn’t exist</li>
+                </ul>
+            </p>            
+            <p>This helped us anchor the need for contextual nudges and structured guidance — not just feature exposure.</p>
+    </div>
+
+    <div class="mb-5">
+        <h2 class="mb-2">Designing “Spaces”</h2>
+        <p class=""> From there, we evolved the concept of “Paradigms” into what became Spaces, structured areas of the app built around real-life contexts.
+            <ul>
+                    <li class="pb-1">Home</li>
+                    <li class="pb-1">Travel</li>
+                    <li class="pb-1">Money</li>
+                    <li class="pb-1">Health</li>
+                    <li class="pb-1">Personal details</li>
+                </ul>
         </p>
         <div class="d-flex align-items-center mb-5">
             <img class="mx-auto" width="100%"  src="imgs/1p-ideas.png">
         </div>
-        
-        <p>
-            We had a grand idea that we could distill down into a smaller version that would not be destructive to the rest of the experience. If we saw the right signals from this smaller version, we would have the green light to build upon it. 
-        </p>
+            <p>These would act as both organisational tools and cognitive scaffolding, helping users quickly understand what else 1Password could do without needing a long onboarding flow.</p>
+            <p>We created a refined hypothesis to guide this work:</p>
+            <blockquote class="blockquote fst-italic">
+            <p class="mb-0">""We believe that clearly defined “spaces” will help users discover and engage with 1Password’s full value earlier. We’ll know it’s working when more users add 2+ item types and convert post-trial.""</p>
+        </blockquote>
         <div class="d-flex align-items-center mb-5">
             <img class="mx-auto" width="100%"  src="imgs/1p-ideas2.png">
         </div>
-        <p>
-            On the back of this small feature we were able to build out the labs experience. We already had a space in our nightly release of the app for feature flags that we could effectively take over and replace. Building on that, we refactored the experience to account for additional permissions we would need. Our feature had a place to live for a limited time while we could gather the necessary feedback. 
+    </div>
+
+    <div class="mb-5">
+        <h2 class="mb-2">Building Labs for Validation</h2>
+            <p class=""> The design was ambitious, and a significant departure from the existing app model. We needed a safe, controlled way to test this vision with real users, without disrupting the core experience.</p>
+            <p>So myself and my Design Director proposed we create a Labs environment. Where teams could launch experiments and users could opt in. After some internal lobbying, we got buy-in. I partnered with our illustrator Joanna to make it feel inviting and exciting.</p>
+            <p>We launched it publicly and began testing.</p>
         </p>
         <div class="d-flex align-items-center mb-5">
             <img class="mx-auto" width="100%"  src="imgs/1p-labmock.png">
         </div>
-        <p>
-            That feedback was gathered in two ways: quantitive data was gathered through anonymous usage metrics and qualitative data was gathered through our forums. Our team was engaged with the threads in the forum in order to dig deeper into customer feedback. 
+    </div>
+
+    <div class="mb-5">
+        <h2 class="mb-2">Launching Real Experiments</h2>
+            <p class="mb-4"> Our first test: Default Details, a precursor to the “Profile” space. It let users set default identities and cards for autofill, making value visible right away.</p>
+            <p>We also snuck in OCR scanning for credit cards, a highly requested feature that reduced friction and boosted perceived utility.</p>
+            <p>These early experiments gave us:
+                <ul>
+                    <li class="pb-1">✅ Quantitative validation of interest</li>
+                    <li class="pb-1">✅ Qualitative insight into next steps</li>
+                    <li class="pb-1">✅ Internal confidence to keep going</li>
+                </ul>
+            </p>
+            
+            <p></p>
+            <p></p>
+            <p></p>
         </p>
+        <div class="d-flex align-items-center mb-5">
+            <img class="mx-auto" width="100%"  src="imgs/1p-labmock.png">
+        </div>
     </div>
         <div class="mb-5">
-            <h2 class="mb-2">Outcome</h2>
+            <h2 class="mb-2">Impact</h2>
+            <p class="mb-3">
+                What started as a Figjam doodle became a new direction for 1Password.
+            <ul class="">
+                <li class="pb-1">55K+ interactions in Labs</li>
+                <li class="pb-1">4 features launched</li>
+                <li class="pb-1">9 experiments shipped</li>
+                <li class="pb-1">1 new product team spun up to carry the work forward</li>
+            </ul>
+            </p>
             <div class="d-flex align-items-center mb-5">
                 <img class="mx-auto" width="100%"  src="imgs/1p-outcome.png">
             </div>
-            <p class="mb-3">
-                Since it’s launch, Labs has enabled the 1Password team to make decisions faster… 
-
-                Beginning of 2024…
-                <ul class="">
-                <li class="pb-2">Five experiments launched leading to three full feature releases</li>
-                <li class="pb-2">Over 15,000 views in the support forums</li>
-                <li class="pb-3">Over 280 comments and feedback on forum posts </li>
-            </ul>
-            </p>
+            <p>The “Spaces” concept led directly into Profile, which is now live. It set the groundwork for future, more personalised user experiences across the app.</p>
         </div>
       </div>
 </section >
