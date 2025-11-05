@@ -288,6 +288,61 @@ ul {
     padding-left: 24px;
 }
 
+.card {
+    min-height: 549px;
+    max-height: 550px;
+}
+
+.cards-viewport {
+  position: relative;
+  overflow-x: auto;        /* horizontal scroll container */
+  overflow-y: visible;     /* let shadows or overflows show vertically */
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain; /* prevents body scroll */
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 48px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 48px), transparent 100%);
+/* Hide scrollbar across browsers */
+  scrollbar-width: none;        /* Firefox */
+}
+
+/* keep the scroller behavior on all sizes */
+.cards-track {
+  display: flex; !important;
+  flex-wrap: nowrap;
+  gap: 3.5rem;
+  padding-bottom: .5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* smooth on iOS */
+  grid-template-columns: none !important;
+}
+
+.cards-viewport::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari, Edge */
+}
+
+.cards-track > .card-wrap {
+  flex: 0 0 var(--card-w);   /* fixed inline size per card */
+  min-width: 375px;
+  scroll-snap-align: start;
+}
+
+
+/* Image handling (no stretch) */
+.avatar-36 { width: 56px; height: 56px; object-fit: cover; }
+.quote-text {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: initial;   /* or unset; browsers ignore if unsupported */
+  -webkit-box-orient: initial;
+}
+
+.card-text:last-child {
+    font-size: 1rem;
+}
+
+.card-quote { transition: transform .2s ease, box-shadow .2s ease; }
+@media (hover:hover){ .card-quote:hover{ transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.08); } }
+
 
 /* When the browser is at least 320px and above */
 @media screen and (min-width: 320px) { 

@@ -14,12 +14,7 @@
     <title>Matt Jackson - Product Designer</title>
 
 <!-- Bootstrap core CSS -->
-<link 
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-  rel="stylesheet" 
-  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-  crossorigin="anonymous"
-/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <!--
@@ -336,72 +331,109 @@
     </div>
   </div>
 
-  <div class="col-md-10 offset-md-1">
-    <div class="row mb-3">
-      <div class="col-md-6 p-2">
-        <div class="p-5 rounded-4 work fade-in">
-          <h3 class="mb-3">&#x1F399</h3>
-          <p class="quote px-2 mb-4">"Matt's enthusiasm to promote all things behavioural was infectious and his sense of fun while doing so made our team so much stronger. Matt's ability to question the status quo and push beyond mediocre to reach a delightful design solution which has an effect. Matt was never afraid to call out lazy thinking or dispute an idea until it proves itself to be the best way forward and, for me, that is a sign of a great designer."</p>
-          <div class="row mt-3">
-            <div class="col-md-2">
-              <img  src="imgs/pd-design.jpg" alt="Paul Davies" width="64px" height="auto" title="Paul's avatar" class="rounded-4"> 
+<section class="container py-6" aria-labelledby="quoteGridTitle">
+  <div class="offset-md-1">
+    <div class="cards-viewport">
+      <!-- Wise-like grid: 1 → 2 → 3 cols -->
+      <div class="cards-track">
+        <!-- Card -->
+        <div class="card-wrap">
+          <article class="card card-quote h-100 bg-light border-0 rounded-5 p-4">
+            <!-- No stretch: fixed aspect ratio + object-fit -->
+            <div class="p-3 overflow-hidden">
+              <img src="imgs/pd-design.jpg" alt="" class="rounded-4 avatar-36">
             </div>
-            <div class="col-md-10 my-auto">
-              <p class="attribution">Paul Davies</p>
-              <p class="attribution">Behavioural Psychologist @ Behaviour</p> 
+            <div class="card-body mb-5">
+              <p class="card-text quote-text">
+                “Matt's enthusiasm to promote all things behavioural was infectious and his sense of fun while doing so made our team so much stronger. Matt's ability to question the status quo and push beyond mediocre to reach a delightful design solution which has an effect. Matt was never afraid to call out lazy thinking or dispute an idea until it proves itself to be the best way forward and, for me, that is a sign of a great designer.”
+              </p>
             </div>
-          </div>
+            <div class="card-footer bg-light border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <div>
+                  <div class="fw-semibold">Paul Davies</div>
+                  <small class="text-body-secondary">Behavioural Psychologist @ Behaviour</small>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-      <div class="col-md-6 p-2">
-        <div class="p-5 rounded-4 work fade-in">
-          <h3 class="mb-3">&#x1F399</h3>
-          <p class="quote px-2 mb-4">"I've had the pleasure to work for Matt for just a few months, but even then he was able to have a solid impact on the team. He built a solid relationship across Product and Engineering, and partnered to find the best possible solutions for the customer that were shippable in the available time. He also supported some of the design vision concepts in order to drive alignment across the organization."</p>
-          <div class="row mt-3">
-            <div class="col-md-2">
-              <img  src="imgs/erin-headshot.jpeg" alt="Erin Casali" width="64px" height="auto" title="Erin's headshot" class="rounded-4"> 
+
+        <!-- Duplicate the card block for your other quotes -->
+        <!-- Erin -->
+        <div class="card-wrap mt-5">
+          <article class="card card-quote h-100 bg-light border-0 rounded-5 p-4">
+            <div class="p-3 overflow-hidden">
+              <img src="imgs/erin-headshot.jpeg" alt="" class="rounded-4 avatar-36">
             </div>
-            <div class="col-md-10 my-auto">
-              <p class="attribution">Erin Casali</p>
-              <p class="attribution">Sr Director of Design @ Xero</p> 
+            <div class="card-body">
+              <p class="card-text quote-text">
+                “I've had the pleasure to work for Matt for just a few months, but even then he was able to have a solid impact on the team. He built a solid relationship across Product and Engineering, and partnered to find the best possible solutions for the customer that were shippable in the available time. He also supported some of the design vision concepts in order to drive alignment across the organization.”
+              </p>
             </div>
-          </div>
+            <div class="card-footer bg-light border-0 pt-0">
+              <div class="d-flex align-items-center gap-2 p-3">
+                <div>
+                  <div class="fw-semibold">Erin Casali</div>
+                <small class="text-body-secondary">Sr Director of Design @ Xero</small>
+                </div>
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Jamie -->
+        <div class="card-wrap">
+          <article class="card card-quote h-100 bg-light border-0 rounded-5 p-4">
+            <div class="p-3 overflow-hidden">
+              <img src="imgs/jamie-headshot.jpg" alt="" class="rounded-4 avatar-36">
+            </div>
+            <div class="card-body">
+              <p class="card-text quote-text">
+                “Over the years Matt has been my go-to trusted leader who I know will get projects moving, teams motivated, and truly identify what makes customers tick. His deep understanding of behaviour and interaction design makes him a solid choice if you're looking to build a product that customers will love and drive business growth forward exponentially.”
+              </p>
+            </div>
+            <div class="card-footer bg-light border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <div>
+                  <div class="fw-semibold">Jamie Heuze</div>
+                  <small class="text-body-secondary">Design Director @ Monzo</small>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Chris -->
+        <div class="card-wrap mt-5">
+          <article class="card card-quote h-100 bg-light border-0 rounded-5 p-4">
+            <div class="p-3 overflow-hidden">
+              <img src="imgs/cg-caboodle.jpg" alt="" class="rounded-4 avatar-36">
+            </div>
+            <div class="card-body">
+              <p class="card-text quote-text">
+                “A hugely valued member of the team. I was continually impressed with his willingness to take on any challenge, listen, think outside the box and produce some great work. I have no doubt it's because of this mentality, and his ever-growing thirst for knowledge about all things UX, that he has become such a talented designer. Hope to work with him again in the future.”
+              </p>
+            </div>
+            <div class="card-footer bg-light border-0 pt-0">
+              <div class="d-flex align-items-center gap-2">
+                <div>
+                  <div class="fw-semibold">Chris Godby</div>
+                  <small class="text-body-secondary">Founder @ Caboodle</small>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6 p-2">
-        <div class="p-5 rounded-4 work fade-in mb-5">
-          <h3 class="mb-3">&#x1F399</h3>
-          <p class="quote px-2 mb-4">"Over the years Matt has been my go-to trusted leader who I know will get projects moving, teams motivated, and truly identify what makes customers tick. His deep understanding of behaviour and interaction design makes him a solid choice if you're looking to build a product that customers will love and drive business growth forward exponentially."</p>
-          <div class="row mt-3">
-            <div class="col-md-2">
-              <img  src="imgs/jamie-headshot.jpg" alt="Jamie Heuze" width="64px" height="auto" title="Jamie's headshot" class="rounded-4"> 
-            </div>
-            <div class="col-md-10 my-auto">
-              <p class="attribution">Jamie Heuze</p>
-              <p class="attribution">Design Director @ Monzo</p> 
-            </div>
-          </div>
-        </div> 
-      </div>
-        <div class="col-md-6 p-2">
-          <div class="p-5 rounded-4 work fade-in">
-            <h3 class="mb-3">&#x1F399</h3>
-            <p class="quote px-2 mb-4">"A hugely valued member of the team. I was continually impressed with his willingness to take on any challenge, listen, think outside the box and produce some great work. I have no doubt it's because of this mentality, and his ever-growing thirst for knowledge about all things UX, that he has become such a talented designer. Hope to work with him again in the future."</p>
-            <div class="row mt-3">
-              <div class="col-md-2">
-                <img  src="imgs/cg-caboodle.jpg" alt="Chris Godby" width="64px" height="auto" title="Chris' headshot" class="rounded-4"> 
-              </div>
-              <div class="col-md-10 my-auto">
-                <p class="attribution">Chris Godby</p>
-                <p class="attribution">Founder @ Caboodle</p> 
-              </div>
-            </div>
-          </div>
-    </div>
-  </div> 
-</section >
+      
+  </div>
+
+</section>
+
+
 
 <section class="container py-5">
   <div class="row">
@@ -521,10 +553,6 @@
     </script>
 
     <!-- Bootstrap 5 JS Bundle with Popper -->
-<script 
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-  crossorigin="anonymous">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body></html>
