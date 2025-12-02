@@ -1,9 +1,6 @@
 # Dependencies
 node_modules/
 
-# Generated files
-css/tailwind.css
-
 # OS files
 .DS_Store
 Thumbs.db
