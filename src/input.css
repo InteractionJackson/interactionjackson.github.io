@@ -7,33 +7,49 @@
   font-family: "TTCommonsProBold";
   src: url('../webFonts/TTCommonsProBold/font.woff2') format('woff2'), 
        url('../webFonts/TTCommonsProBold/font.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "TTCommonsProDemiBold";
   src: url('../webFonts/TTCommonsProDemiBold/font.woff2') format('woff2'), 
        url('../webFonts/TTCommonsProDemiBold/font.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "TTCommonsProRegular";
   src: url('../webFonts/TTCommonsProRegular/font.woff2') format('woff2'), 
        url('../webFonts/TTCommonsProRegular/font.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Base typography */
 @layer base {
   html, body {
     @apply font-regular text-base text-black bg-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   h1 {
     @apply font-bold text-text-primary leading-tight;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h2 {
     @apply font-bold text-text-heading leading-tight;
     font-size: 40px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h3 {
