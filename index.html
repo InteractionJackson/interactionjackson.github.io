@@ -42,7 +42,7 @@
     <div class="mt-5 text-left py-3">
       <h1 class="mb-5">👋 Hello there, I'm <span class="underline-sketch1">Matt</span>.</h1> 
       <h1 class="mb-5">I design experiences that feel <span class="circle-sketch">simple</span> and <span class='underline-sketch2'>human</span>, yet go <span class="underline-sketch3">beyond</span> the ordinary.</h1>
-      <h1 class="mb-5">Currently, I'm a Lead Product Designer at <a class="" target="_blank" href="https://monzo.com">Monzo</a>.</h1>
+      <h1 class="mb-5">Currently, I'm a Lead Product Designer at <a class="monzo-link" target="_blank" href="https://monzo.com">Monzo</a>.</h1>
     </div>
   </div>
 </section>
@@ -184,9 +184,27 @@
     </div>
   </div>
 
-<section class="container mx-auto px-4 mb-section" aria-labelledby="quoteGridTitle">
-  <div class="ml-0 md:ml-[8.333%]">
-    <div class="cards-viewport">
+<section class="carousel-section mb-section" aria-labelledby="quoteGridTitle">
+  <div class="container mx-auto px-4">
+    <div class="ml-0 md:ml-[8.333%]">
+      <div class="carousel-nav mb-4">
+        <button class="carousel-btn" id="scrollLeft" aria-label="Scroll left">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button class="carousel-btn" id="scrollRight" aria-label="Scroll right">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-overflow-wrapper">
+    <div class="container mx-auto px-4">
+      <div class="ml-0 md:ml-[8.333%]">
+        <div class="cards-viewport" id="cardsViewport">
       <div class="cards-track">
         <!-- Card -->
         <div class="card-wrap">
@@ -274,6 +292,7 @@
               </div>
             </div>
           </article>
+        </div>
         </div>
       </div>
     </div>
@@ -385,6 +404,33 @@
   fadeInElements.forEach(element => {
       observer.observe(element);
   });
+
+  // Carousel navigation
+  const viewport = document.getElementById('cardsViewport');
+  const scrollLeftBtn = document.getElementById('scrollLeft');
+  const scrollRightBtn = document.getElementById('scrollRight');
+  
+  if (viewport && scrollLeftBtn && scrollRightBtn) {
+    const scrollAmount = 450; // Approximate card width + gap
+    
+    function updateButtons() {
+      const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+      scrollLeftBtn.disabled = viewport.scrollLeft <= 0;
+      scrollRightBtn.disabled = viewport.scrollLeft >= maxScroll - 1;
+    }
+    
+    scrollLeftBtn.addEventListener('click', () => {
+      viewport.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+    
+    scrollRightBtn.addEventListener('click', () => {
+      viewport.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+    
+    viewport.addEventListener('scroll', updateButtons);
+    window.addEventListener('resize', updateButtons);
+    updateButtons();
+  }
 </script>
 
 </body>

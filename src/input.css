@@ -102,6 +102,16 @@
     @apply ml-2 w-[6px] overflow-visible;
   }
 
+  /* Links */
+  .monzo-link {
+    @apply transition-colors;
+    color: #FF4F40;
+  }
+
+  .monzo-link:hover {
+    color: #B42929;
+  }
+
   /* Navigation */
   .nav-link {
     @apply text-[#8893AF] font-bold uppercase transition-all;

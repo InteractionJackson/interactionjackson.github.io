@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html"],
+  safelist: [
+    'monzo-link',
+  ],
   theme: {
     maxWidth: {
       none: 'none',
