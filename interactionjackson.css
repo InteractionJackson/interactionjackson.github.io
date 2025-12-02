@@ -1,30 +1,135 @@
-/**
- * @license
- * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: HelveticaLTWXX-Roman by Linotype
- * URL: https://www.myfonts.com/fonts/linotype/helvetica/pro-regular/
- * Copyright: Copyright © 2014 Monotype Imaging Inc. All rights reserved.
- * 
- * 
- * 
- * © 2020 MyFonts Incn*/
+/* Custom sketch and effect styles - preserved from original design */
 
- /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/378733");
-
-
-@font-face {
-  font-family: "TTFirsNeueDemiBold";
-  src: url('webFonts/TTFirsNeueDemiBold/font.woff2') format('woff2'), url('webFonts/TTFirsNeueDemiBold/font.woff') format('woff');
+/* Sketch underlines and highlights */
+.underline-sketch1 {
+  background: url('./imgs/underline-1.png') bottom left no-repeat;
+  background-size: 100% 0.3em;
+  padding-bottom: 0px;
 }
-@font-face {
-  font-family: "TTFirsNeueRegular";
-  src: url('webFonts/TTFirsNeueRegular/font.woff2') format('woff2'), url('webFonts/TTFirsNeueRegular/font.woff') format('woff');
+
+.underline-sketch2 {
+  background: url('./imgs/underline-2.png') bottom left no-repeat;
+  background-size: 100% 0.3em;
+  padding-bottom: 0px;
+}
+
+.underline-sketch3 {
+  background: url('./imgs/underline-3.png') bottom left no-repeat;
+  background-size: 100% 0.3em;
+  padding-bottom: 0px;
+}
+
+.circle-sketch {
+  background: url('./imgs/circle-1.png') bottom left no-repeat;
+  background-size: 100% 1.2em;
+}
+
+.highlight-sketch {
+  background: url('./imgs/highlight.png') bottom left no-repeat;
+  background-size: 100% 1.2em;
+  padding-bottom: 8px;
+}
+
+.highlight-sketch2 {
+  background: url('./imgs/highlight2.png') bottom left no-repeat;
+  background-size: 100% 1.2em;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Arrow button animation */
+.arrow-head {
+  transform: translateX(0);
+  transition: transform 0.15s ease-in-out;
+}
+
+.arrow-body {
+  opacity: 0;
+  transform: scaleX(1);
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.btn-arrow:hover .arrow-head {
+  transform: translateX(3px);
+}
+
+.btn-arrow:hover .arrow-body {
+  opacity: 1;
+  transform: scaleX(2);
+}
+
+/* Card carousel styles */
+.cards-viewport {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 48px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 48px), transparent 100%);
+  scrollbar-width: none;
+}
+
+.cards-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-track {
+  display: flex !important;
+  flex-wrap: nowrap;
+  gap: 3.5rem;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  grid-template-columns: none !important;
+}
+
+.cards-track > .card-wrap {
+  flex: 0 0 var(--card-w);
+  min-width: 375px;
+  scroll-snap-align: start;
+}
+
+.quote-text {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: initial;
+  -webkit-box-orient: initial;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 320px) {
+  .margin-nudge-bottom {
+    margin-bottom: 1rem;
+  }
+  
+  .work-desc {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .margin-nudge-bottom {
+    margin-bottom: 0rem;
+  }
+  
+  .work-desc {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-desc {
+    padding: 3.5rem;
+  }
 }

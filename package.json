@@ -1,0 +1,18 @@
+{
+  "name": "interactionjackson-portfolio",
+  "version": "1.0.0",
+  "description": "Matt Jackson's Product Designer Portfolio",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify"
+  },
+  "keywords": ["portfolio", "design"],
+  "author": "Matt Jackson",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35"
+  }
+}
+

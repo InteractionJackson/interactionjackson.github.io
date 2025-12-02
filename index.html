@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -13,90 +14,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Matt Jackson - Product Designer</title>
 
-<!-- Bootstrap core CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-<!--
-/**
- * @license
- * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: TT Commons Pro DemiBold by TypeType
- * URL: https://www.myfonts.com/collections/typetype-foundry
-
- * Webfont: TT Commons Pro Regular by TypeType
- * URL: https://www.myfonts.com/collections/typetype-foundry
-
- * Webfont: TT Commons Pro Bold by TypeType
- * URL: https://www.myfonts.com/collections/typetype-foundry
- 
- * © 2025 MyFonts Inc. */
--->
-<link rel="stylesheet" type="text/css" href="css/MyWebfontsKit.css"/>
-<link rel="stylesheet" type="text/css" href="interactionjackson.css">
-<!-- Custom styles for this template -->
-<link href="css/style.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="css/tailwind.css" rel="stylesheet">
+    <!-- Custom effects CSS -->
+    <link rel="stylesheet" type="text/css" href="interactionjackson.css">
 </head>
 
-<body class="">
+<body>
 
-<section class='mt-5 sticky-top nav-shadow'>
-  <header class="container mt-3 p-3 ">
-    <div class="col-md-10 offset-md-1 d-flex flex-wrap justify-content-center align-middle">
-      <a class="d-flex mb-md-0 me-md-auto margin-nudge-bottom avatar-gradient" href="index.html">
-        <img  src="imgs/mj-avatar.png" alt="Matt's memoji" width="56px" height="auto" title="Matt's avatar">
+<section class='mt-5 sticky top-0 z-50 nav-shadow'>
+  <header class="container mx-auto px-4 mt-3 py-3">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-center items-center">
+      <a class="flex mb-0 mr-auto margin-nudge-bottom avatar-gradient" href="index.html">
+        <img src="imgs/mj-avatar.png" alt="Matt's memoji" width="56" height="56" title="Matt's avatar">
       </a>
-      <ul class="nav nav-pills my-auto">
-        <li class="nav-item"><a href="about.html" class="nav-link" aria-current="page">About</a></li>
-        <li class="nav-item"><a href="https://medium.com/@MattJackson" target="_blank" class="nav-link" aria-current="page">Insights</a></li>
-        <li class="nav-item"><a href="https://www.linkedin.com/in/matthew-jackson-229a3544/" target="_blank" class="nav-link">LinkedIn</a></li>
+      <ul class="flex space-x-4 my-auto">
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="https://medium.com/@MattJackson" target="_blank" class="nav-link">Insights</a></li>
+        <li><a href="https://www.linkedin.com/in/matthew-jackson-229a3544/" target="_blank" class="nav-link">LinkedIn</a></li>
       </ul>
     </div>
   </header>
 </section>
 
-<section class='container mt-5'>
-  <div class="col-md-10 offset-md-1 mb-5 pt-1">
-    <div class="mt-5 text-left py-3 px-4">
-      <h1 class="mb-5">👋 Hello there, I'm <span class="underline-sketch1">Matt</span>. </h1> 
+<section class='container mx-auto mt-5 my-section'>
+  <div class="max-w-6xl mx-auto mb-5 pt-1">
+    <div class="mt-5 text-left py-3">
+      <h1 class="mb-5">👋 Hello there, I'm <span class="underline-sketch1">Matt</span>.</h1> 
       <h1 class="mb-5">I design experiences that feel <span class="circle-sketch">simple</span> and <span class='underline-sketch2'>human</span>, yet go <span class="underline-sketch3">beyond</span> the ordinary.</h1>
       <h1 class="mb-5">Currently, I'm a Lead Product Designer at <a class="" target="_blank" href="https://monzo.com">Monzo</a>.</h1>
     </div>
   </div>
 </section>
 
-<section class="container py-5">
-
-<!--Monzo resiliance-->
-
+<section class="container mx-auto px-4 my-section">
 
 <!--Monzo search-->
-<div class="col-md-10 offset-md-1 pb-5 mb-5">
-  <div class="row fade-in gx-5">
-      <div class="col-md-12 bg-blue-subtle align-items-center border-subtle rounded-5 mb-4">
-            <img class="mx-auto" width="100%"  src="imgs/Monzosearch-case.png">
+<div class="max-w-6xl mx-auto pb-5 mb-section">
+  <div class="flex flex-wrap fade-in gap-8">
+      <div class="w-full bg-blue-subtle items-center border-subtle rounded-5xl mb-4">
+            <img class="mx-auto w-full" src="imgs/Monzosearch-case.png" alt="Monzo search case study">
       </div>
   </div>
-  <div class="row px-4 fade-in gx-5">
-      <div class="col-md-4  my-4">
-            <!--<h2>&#128300</h2>-->
-            <h3 class="pt-2">Monzo Bank</h3>
+  <div class="flex flex-wrap px-4 fade-in gap-8">
+      <div class="w-full md:w-1/3 my-4">
+            <h4 class="py-1">MONZO BANK</h4>
             <p>Lead Product Designer</p>
       </div>
-      <div class="col-md-8 my-4 align-self-center ">
-            <!--<h2>&#128300</h2>-->
+      <div class="w-full md:w-7/12 my-4 self-center">
             <h2 class="pb-3">The next generation of search for everyday banking</h2>
-            <p class="pb-3">Search was one of Monzo’s most-used yet underdeveloped features. People struggled to find what they needed or discover what was possible. We set out to make it faster, smarter, and more helpful. Shifting banking from a task of compliance (“I’m doing banking”) to collaboration (“my bank is helping me make sense of this”).</p>
-            <div class="d-flex flex-column align-items-start mt-2">
-              <a class="btn btn-light" href="labs.html"><i class="bi bi-hourglass mr-2 d-inline-block"></i>   Case study coming soon
-
+            <p class="pb-3">Search was one of Monzo's most-used yet underdeveloped features. People struggled to find what they needed or discover what was possible. We set out to make it faster, smarter, and more helpful. Shifting banking from a task of compliance ("I'm doing banking") to collaboration ("my bank is helping me make sense of this").</p>
+            <div class="flex flex-col items-start mt-2">
+              <a class="btn btn-light inline-flex items-center" href="labs.html">
+                <svg class="mr-2" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                Case study coming soon
               </a>
             </div>
       </div>
@@ -104,25 +75,22 @@
 </div>
 
 <!--1Password-->
-<div class="col-md-10 offset-md-1 pb-5 mb-5">
-  <div class="row fade-in gx-5">
-      <div class="col-md-12 bg-blue-subtle align-items-center border-subtle rounded-5 mb-4">
-            <img class="mx-auto" width="100%"  src="imgs/1Password-case.png">
+<div class="max-w-6xl mx-auto pb-5 mb-section">
+  <div class="flex flex-wrap fade-in gap-8">
+      <div class="w-full bg-blue-subtle items-center border-subtle rounded-5xl mb-4">
+            <img class="mx-auto w-full" src="imgs/1Password-case.png" alt="1Password case study">
       </div>
   </div>
-  <div class="row px-4 fade-in gx-5">
-      <div class="col-md-4  my-4">
-            <!--<h2>&#128300</h2>-->
-            <h3 class="pt-2">1Password</h3>
+  <div class="flex flex-wrap px-4 fade-in gap-8">
+      <div class="w-full md:w-1/3 my-4">
+            <h4 class="py-1">1PASSWORD</h4>
             <p>Staff Product Designer</p>
       </div>
-      <div class="col-md-8 my-4 align-self-center ">
-            <!--<h2>&#128300</h2>-->
+      <div class="w-full md:w-7/12 my-4 self-center">
             <h2 class="pb-3">Enabling product teams learn from real people, faster</h2>
             <p class="pb-3">I led the design of a new way for teams to quickly test ideas with customers. This gave us clearer signals on which features truly matter, so the business could double-down on delivering the stuff that makes the biggest difference for people using our apps.</p>
-            <div class="d-flex flex-column align-items-start mt-2">
+            <div class="flex flex-col items-start mt-2">
               <a class="btn btn-primary btn-arrow" href="labs.html">Read case study
-
                 <svg class="arrow-icon" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="arrow-head">
                       <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
@@ -131,11 +99,9 @@
                       <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
                     </g>
                   </svg>
-
               </a>
               <br>
-              <a target="_blank" class="btn btn-light btn-arrow" href="https://blog.1password.com/labs-experimental-features/"></i>1Password's release announcement
-
+              <a target="_blank" class="btn btn-light btn-arrow" href="https://blog.1password.com/labs-experimental-features/">1Password's release announcement
               <svg class="arrow-icon" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="arrow-head">
                       <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
@@ -144,49 +110,29 @@
                       <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
                     </g>
                   </svg>
-
                 </a>
             </div>
-
-              
-              <!--<div class="row mt-4 metrics">
-                <div class="col-md-4">
-                  <h3>6</h3>
-                  <p>Experiments</p>
-                </div>
-                <div class="col-md-4">
-                  <h3>3</h3>
-                  <p>Feature launches</p>
-                </div>
-                <div class="col-md-4">
-                  <h3>15,000+</h3>
-                  <p>Customer interactions</p>
-                </div>
-              </div>-->
       </div>
   </div>  
 </div>
 
 <!--Adherium-->
-<div class="col-md-10 offset-md-1 pb-5 mb-5 ">
-  <div class="row fade-in gx-5">
-      <div class="col-md-12 bg-blue-subtle align-items-center border-subtle rounded-5 mb-4">
-            <img class="mx-auto" width="100%"  src="imgs/adherium-case.png">
+<div class="max-w-6xl mx-auto pb-5 mb-section">
+  <div class="flex flex-wrap fade-in gap-8">
+      <div class="w-full bg-blue-subtle items-center border-subtle rounded-5xl mb-4">
+            <img class="mx-auto w-full" src="imgs/adherium-case.png" alt="Adherium case study">
       </div>
   </div>
-  <div class="row px-4 fade-in gx-5">
-      <div class="col-md-4  my-4">
-            <!--<h2>&#128300</h2>-->
-            <h3 class="pt-2">Etch / Adherium</h3>
+  <div class="flex flex-wrap px-4 fade-in gap-8">
+      <div class="w-full md:w-1/3 my-4">
+            <h4 class="py-1">ETCH / ADHERIUM</h4>
             <p>Lead Product Designer</p>
       </div>
-      <div class="col-md-8 my-4 align-self-center ">
-            <!--<h2>&#128300</h2>-->
+      <div class="w-full md:w-7/12 my-4 self-center">
             <h2 class="pb-3">Helping people with asthma build healthier habits</h2>
             <p class="pb-3">Over the course of 4 months, I led the design of an experience shaped by behavioural insights, using gentle prompts to help people manage their condition more easily and get back to living life on their terms. The result: healthier routines for patients and clearer value for the business through improved adherence and engagement.</p>
-              <div class="d-flex flex-column align-items-start mt-2">
+              <div class="flex flex-col items-start mt-2">
                 <a class="mt-2 btn btn-primary btn-arrow" href="hailie.html">Read case study  
-
                   <svg class="arrow-icon" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g class="arrow-head">
                       <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
@@ -195,189 +141,92 @@
                       <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
                     </g>
                   </svg>
-
                 </a>
               </div>
-              
-              <!--<div class="row mt-4 metrics">
-                <div class="col-md-4">
-                  <h3>6</h3>
-                  <p>Experiments</p>
-                </div>
-                <div class="col-md-4">
-                  <h3>3</h3>
-                  <p>Feature launches</p>
-                </div>
-                <div class="col-md-4">
-                  <h3>15,000+</h3>
-                  <p>Customer interactions</p>
-                </div>
-              </div>-->
       </div>
   </div>  
 </div>
 
-  <div class="col-md-10 offset-md-1 mb-5">
-    <div class="">
-      <div class="row  work-desc work rounded-5 fade-in visible mb-5">
-      <div class="col-md-6 my-4 align-self-center mb-5">
+  <div class="max-w-6xl mx-auto mb-5">
+    <div class="flex flex-wrap work work-desc rounded-5xl fade-in visible mb-5">
+      <div class="w-full md:w-1/2 my-4 self-center mb-5">
             <h2 class="pb-3">Making Personal Tax less taxing for accountants at crunch time</h2>
-            <p class="pb-3">After extensive user testing and heuristic analysis, I designed key updates to improve the usability as well as setting out a roadmap to push the experience beyond the ordinary. </p>
-              <a target="_blank" class="mt-2 btn-light" href="https://www.youtube.com/watch?v=V1XKoRJbDMM&t=6798s">Xerocon launch <i class="mx-2 bi bi-arrow-up-right"></i></a>
-              <!--<div class="row mt-5 metrics">
-                <div class="col-md-4">
-                  <h3>13</h3>
-                  <p>Quick wins implimented</p>
-                </div>
-                <div class="col-md-4">
-                  <h3>2.5+</h3>
-                  <p>Hours saved per client</p>
-                </div>
-                <div class="col-md-4">
-                  <h3>9</h3>
-                  <p>Optimisations added to roadmap</p>
-                </div>
-              </div>-->
+            <p class="pb-3">After extensive user testing and heuristic analysis, I designed key updates to improve the usability as well as setting out a roadmap to push the experience beyond the ordinary.</p>
+              <a target="_blank" class="mt-2 btn btn-light inline-flex items-center" href="https://www.youtube.com/watch?v=V1XKoRJbDMM&t=6798s">Xerocon launch 
+                <svg class="ml-2" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
+              </a>
       </div>
-      <div class="col-md-6 d-flex align-items-center ">
-            <img class="mx-auto" width="100%"  src="imgs/casestudy-xero2.png">
+      <div class="w-full md:w-1/2 flex items-center">
+            <img class="mx-auto w-full" src="imgs/casestudy-xero2.png" alt="Xero case study">
       </div>
     </div>
-
-    </div>
-    
   </div>
 
-  <div class="col-md-10 offset-md-1 p-2 mt-5">
-    <div class="work row work-desc rounded-5 mb-5 fade-in">
-      <div class="col-md-6 my-4 align-self-center">
+  <div class="max-w-6xl mx-auto mt-5">
+    <div class="work flex flex-wrap work-desc rounded-5xl mb-5 fade-in">
+      <div class="w-full md:w-1/2 my-4 self-center">
             <h2 class="pb-2">Exploring how an Apple Watch could to help someone perform CPR</h2>
             <p>Every minute counts when someone has a cardiac arrest. In this side project, I explored how smartwatch technology could help anyone to recognise a cardiac arrest and perform effective CPR.</p>
       </div>
-      <div class="col-md-6 d-flex align-items-center">
-            <img class="mx-auto" width="100%"  src="imgs/casestudy-cpr.png">
+      <div class="w-full md:w-1/2 flex items-center">
+            <img class="mx-auto w-full" src="imgs/casestudy-cpr.png" alt="CPR case study">
       </div>
     </div>
   </div>
-  <!--
-  <div class="px-5 py-2 mb-5">
-    <div class="work row work-desc rounded-5 mb-5 fade-in">
-      <div class="col-md-6 my-4 align-self-center">
-            <h2 class="pb-1">A homepage experience that adapts to you as you search for a new home</h2>
-            <p>During a replatforming and redesign of Zoopla’s homepage, I designed the foundations of a homepage that adapts to a consumers search behaviour. This resulted in an increase of customers picking up where they left off seamlessly.</p>
-              <a target="_blank" class=" mt-2 btn-light" href="https://www.zoopla.co.uk/">Search for yourself</a>
-              <!--<div class="row mt-3 metrics">
-                <div class="col-md-6">
-                  <h3>+3.28%</h3>
-                  <p>Lead conversions</p>
-                </div>
-                <div class="col-md-6">
-                  <h3>+107%</h3>
-                  <p>Saved searches</p>
-                </div>
-              </div>
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-            <img class="mx-auto" width="100%"  src="imgs/casestudy-homepage.png">
-      </div>
-    </div>
 
-    <div class="px-5 py-2">
-    <div class="work row work-desc rounded-4 mb-5">
-      <div class="col-md-6 my-4">
-        <h2>&#127820</h2>
-            <h2 class="pb-2">An approach to product adoption thats completely and utterly bananas.</h2>
-            <p>By mixing behavioural economics, bananas and a whole lot of puns together, I designed a campaign that aimed to enhanced staff attitudes towards a wealth planning service's new intranet. This resulted in teams to adopting the new product with ease.</p> 
-          </div>
-          <div class="col-md-6 d-flex align-items-center">
-            <img class="mx-auto" width="100%"  src="imgs/bananas.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="px-5 py-2">
-    <div class="work row work-desc rounded-4 mb-5">
-      <div class="col-md-6 my-4">
-        <h3>❤️‍🩹</h2>
-            <h2 class="pb-2">A side project that explored how an Apple Watch could to help someone perform CPR</h2>
-            <p>Every minute counts when someone has a cardiac arrest. In this side project, I explored how smartwatch technology could help anyone to recognise a cardiac arrest and perform effective CPR.</p>
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-            <img class="mx-auto" width="100%"  src="imgs/casestudy-cpr.png">
-      </div>
-    </div>
-  </div>
-  <div class="px-5 py-2">
-    <div class="work row work-desc rounded-4 mb-5">
-      <div class="col-md-6 my-4">
-        <h2>&#128269</h2>
-            <h2 class="pb-2">A homepage experience that adapts to you as you search for a new home</h2>
-            <p>During a replatforming and redesign of Zoopla’s homepage, I designed the foundations of a homepage that adapts to a consumers search behaviour. This resulted in an increase of customers picking up where they left off seamlessly.</p>
-              <a target="_blank" class=" mt-2 pill-button" href="https://www.zoopla.co.uk/">Try it yourself</a>
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-            <img class="mx-auto" width="100%"  src="imgs/casestudy-homepage.png">
-      </div>
-    </div>
-  </div>-->
 </section>
 
-<section class='container'>
-  <div class="col-md-10 offset-md-1 py-5">
+<section class='container mx-auto px-4 my-section'>
+  <div class="max-w-6xl mx-auto py-5">
     <div class="text-left py-5 px-4">
-      <h1 class="mb-4">Part designer, part strategist</span>, and part operations. Let me bring <span class="underline-sketch1">more</span> than good design to <span class="underline-sketch2">your</span>  team.</h1>
-      <p class="intro col-md-11 py-2">I look for ways to create efficiencies in strategies and workflows with the aim of boosting those around me. My mind strives to understand and conceptualise the best way forward for businesses, enabling me to take things from napkin sketch to shipped product.</p>
+      <h1 class="mb-4">Part designer, part strategist, and part operations. Let me bring <span class="underline-sketch1">more</span> than good design to <span class="underline-sketch2">your</span> team.</h1>
+      <p class="intro py-2">I look for ways to create efficiencies in strategies and workflows with the aim of boosting those around me. My mind strives to understand and conceptualise the best way forward for businesses, enabling me to take things from napkin sketch to shipped product.</p>
     </div>
   </div>
 
-<section class="container py-6" aria-labelledby="quoteGridTitle">
-  <div class="offset-md-1">
+<section class="container mx-auto px-4 mb-section" aria-labelledby="quoteGridTitle">
+  <div class="ml-0 md:ml-[8.333%]">
     <div class="cards-viewport">
-      <!-- Wise-like grid: 1 → 2 → 3 cols -->
       <div class="cards-track">
         <!-- Card -->
         <div class="card-wrap">
-          <article class="card card-quote h-100 bg-light border-0 rounded-5 p-4">
-            <!-- No stretch: fixed aspect ratio + object-fit -->
-            <div class="p-3 overflow-hidden">
-              <img src="imgs/pd-design.jpg" alt="" class="rounded-4 avatar-36">
+          <article class="card card-quote h-full bg-gray-100 border-0 rounded-5xl p-5">
+            <div class="pb-3 overflow-hidden">
+              <img src="imgs/pd-design.jpg" alt="" class="rounded-2xl avatar-36">
             </div>
-            <div class="card-body mb-5">
-              <p class="card-text quote-text">
-                “Matt's enthusiasm to promote all things behavioural was infectious and his sense of fun while doing so made our team so much stronger. Matt's ability to question the status quo and push beyond mediocre to reach a delightful design solution which has an effect. Matt was never afraid to call out lazy thinking or dispute an idea until it proves itself to be the best way forward and, for me, that is a sign of a great designer.”
+            <div class="mb-3 flex-grow">
+              <p class="quote-text">
+                "Matt's enthusiasm to promote all things behavioural was infectious and his sense of fun while doing so made our team so much stronger. Matt's ability to question the status quo and push beyond mediocre to reach a delightful design solution which has an effect. Matt was never afraid to call out lazy thinking or dispute an idea until it proves itself to be the best way forward and, for me, that is a sign of a great designer."
               </p>
             </div>
-            <div class="card-footer bg-light border-0 pt-0">
-              <div class="d-flex align-items-center gap-2">
+            <div class="bg-gray-100 border-0 pt-0">
+              <div class="flex items-center gap-2">
                 <div>
-                  <div class="fw-semibold">Paul Davies</div>
-                  <small class="text-body-secondary">Behavioural Psychologist @ Behaviour</small>
+                  <div class="font-semibold">Paul Davies</div>
+                  <small class="text-gray-500">Behavioural Psychologist @ Behaviour</small>
                 </div>
               </div>
             </div>
           </article>
         </div>
 
-        <!-- Duplicate the card block for your other quotes -->
         <!-- Erin -->
         <div class="card-wrap mt-5">
-          <article class="card card-quote h-100 bg-light border-0 rounded-5 p-4">
-            <div class="p-3 overflow-hidden">
-              <img src="imgs/erin-headshot.jpeg" alt="" class="rounded-4 avatar-36">
+          <article class="card card-quote h-full bg-gray-100 border-0 rounded-5xl p-5">
+            <div class="pb-3 overflow-hidden">
+              <img src="imgs/erin-headshot.jpeg" alt="" class="rounded-2xl avatar-36">
             </div>
-            <div class="card-body">
-              <p class="card-text quote-text">
-                “I've had the pleasure to work for Matt for just a few months, but even then he was able to have a solid impact on the team. He built a solid relationship across Product and Engineering, and partnered to find the best possible solutions for the customer that were shippable in the available time. He also supported some of the design vision concepts in order to drive alignment across the organization.”
+            <div class="mb-3 flex-grow">
+              <p class="quote-text">
+                "I've had the pleasure to work for Matt for just a few months, but even then he was able to have a solid impact on the team. He built a solid relationship across Product and Engineering, and partnered to find the best possible solutions for the customer that were shippable in the available time. He also supported some of the design vision concepts in order to drive alignment across the organization."
               </p>
             </div>
-            <div class="card-footer bg-light border-0 pt-0">
-              <div class="d-flex align-items-center gap-2 p-3">
+            <div class="bg-gray-100 border-0 pt-0">
+              <div class="flex items-center gap-2">
                 <div>
-                  <div class="fw-semibold">Erin Casali</div>
-                <small class="text-body-secondary">Sr Director of Design @ Xero</small>
+                  <div class="font-semibold">Erin Casali</div>
+                <small class="text-gray-500">Sr Director of Design @ Xero</small>
                 </div>
-                
               </div>
             </div>
           </article>
@@ -385,20 +234,20 @@
 
         <!-- Jamie -->
         <div class="card-wrap">
-          <article class="card card-quote h-100 bg-light border-0 rounded-5 p-4">
-            <div class="p-3 overflow-hidden">
-              <img src="imgs/jamie-headshot.jpg" alt="" class="rounded-4 avatar-36">
+          <article class="card card-quote h-full bg-gray-100 border-0 rounded-5xl p-5">
+            <div class="pb-3 overflow-hidden">
+              <img src="imgs/jamie-headshot.jpg" alt="" class="rounded-2xl avatar-36">
             </div>
-            <div class="card-body">
-              <p class="card-text quote-text">
-                “Over the years Matt has been my go-to trusted leader who I know will get projects moving, teams motivated, and truly identify what makes customers tick. His deep understanding of behaviour and interaction design makes him a solid choice if you're looking to build a product that customers will love and drive business growth forward exponentially.”
+            <div class="mb-3 flex-grow">
+              <p class="quote-text">
+                "Over the years Matt has been my go-to trusted leader who I know will get projects moving, teams motivated, and truly identify what makes customers tick. His deep understanding of behaviour and interaction design makes him a solid choice if you're looking to build a product that customers will love and drive business growth forward exponentially."
               </p>
             </div>
-            <div class="card-footer bg-light border-0 pt-0">
-              <div class="d-flex align-items-center gap-2">
+            <div class="bg-gray-100 border-0 pt-0">
+              <div class="flex items-center gap-2">
                 <div>
-                  <div class="fw-semibold">Jamie Heuze</div>
-                  <small class="text-body-secondary">Design Director @ Monzo</small>
+                  <div class="font-semibold">Jamie Heuze</div>
+                  <small class="text-gray-500">Design Director @ Monzo</small>
                 </div>
               </div>
             </div>
@@ -407,20 +256,20 @@
 
         <!-- Chris -->
         <div class="card-wrap mt-5">
-          <article class="card card-quote h-100 bg-light border-0 rounded-5 p-4">
-            <div class="p-3 overflow-hidden">
-              <img src="imgs/cg-caboodle.jpg" alt="" class="rounded-4 avatar-36">
+          <article class="card card-quote h-full bg-gray-100 border-0 rounded-5xl p-5">
+            <div class="pb-3 overflow-hidden">
+              <img src="imgs/cg-caboodle.jpg" alt="" class="rounded-2xl avatar-36">
             </div>
-            <div class="card-body">
-              <p class="card-text quote-text">
-                “A hugely valued member of the team. I was continually impressed with his willingness to take on any challenge, listen, think outside the box and produce some great work. I have no doubt it's because of this mentality, and his ever-growing thirst for knowledge about all things UX, that he has become such a talented designer. Hope to work with him again in the future.”
+            <div class="flex-grow">
+              <p class="quote-text">
+                "A hugely valued member of the team. I was continually impressed with his willingness to take on any challenge, listen, think outside the box and produce some great work. I have no doubt it's because of this mentality, and his ever-growing thirst for knowledge about all things UX, that he has become such a talented designer. Hope to work with him again in the future."
               </p>
             </div>
-            <div class="card-footer bg-light border-0 pt-0">
-              <div class="d-flex align-items-center gap-2">
+            <div class="bg-gray-100 border-0 pt-0">
+              <div class="flex items-center gap-2">
                 <div>
-                  <div class="fw-semibold">Chris Godby</div>
-                  <small class="text-body-secondary">Founder @ Caboodle</small>
+                  <div class="font-semibold">Chris Godby</div>
+                  <small class="text-gray-500">Founder @ Caboodle</small>
                 </div>
               </div>
             </div>
@@ -428,86 +277,82 @@
         </div>
       </div>
     </div>
-      
   </div>
-
 </section>
 
-
-
-<section class="container py-5">
-  <div class="row">
-    <div class="col-md-10 offset-md-1 px-4">
-        <div class='row mt-5 mb-5'>
-        <div class="col-md-12 job-desc mb-2">
-          <h2 class="mb-4">
+<section class="container mx-auto px-4 my-section">
+  <div class="flex flex-wrap">
+    <div class="max-w-6xl mx-auto px-4 w-full">
+        <div class='flex flex-wrap mt-5 mb-5'>
+        <div class="w-full mb-2">
+          <h3 class="mb-2">
             <span class="circle-sketch">Monzo</span>
-          </h2>
-          <h3 class="">
-            Lead Product Designer, Nov 2024 - Present
           </h3>
+          <h4 class="mb-1">
+            Lead Product Designer, Nov 2024 - Present
+          </h4>
           <p>
-            I was the founding designer on Monzo’s Search team, shaping how people discover and use features across the app. I'm currently part the App Evolution team, designing experiences that help people build financial resilience, from making the most of their money on payday to understanding their next step forward.
+            I was the founding designer on Monzo's Search team, shaping how people discover and use features across the app. I'm currently part the App Evolution team, designing experiences that help people build financial resilience, from making the most of their money on payday to understanding their next step forward.
           </p>
         </div>
       </div>
-      <div class='row mb-5'>
-        <div class="col-md-12 job-desc  mb-2">
-          <h2 class="mb-4">
-            <span class="underline-sketch1">1Password</span>
-          </h2>
+      <div class='flex flex-wrap mb-5'>
+        <div class="w-full mb-2">
           <h3 class="mb-2">
-            Staff Product Designer, Aug 2022 - October 2024
+            <span class="underline-sketch1">1Password</span>
           </h3>
+          <h4 class="mb-1">
+            Staff Product Designer, Aug 2022 - October 2024
+          </h4>
           <p>
             One of the founding designers for Extended Access Management, a new product offering from 1Password, I focused on shaping the product vision while staying hands-on with design and testing new experiences early and often. I also guided a team of skilled product designers, helping set direction and raising the quality of the work to deliver frictionless and delightful experiences.
           </p>
         </div>
       </div>
-      <div class='row mb-5'>
-        <div class="col-md-12 job-desc mb-2">
-          <h2 class="mb-4">
-            <span class="underline-sketch2">Xero</span>
-          </h2>
+      <div class='flex flex-wrap mb-5'>
+        <div class="w-full mb-2">
           <h3 class="mb-2">
-            Senior Product Designer, Nov 2021 - Jul 2022
+            <span class="underline-sketch2">Xero</span>
           </h3>
+          <h4 class="mb-1">
+            Senior Product Designer, Nov 2021 - Jul 2022
+          </h4>
           <p>
             I was responsible for modernising the aesthetic and improving the experience of the Personal Tax product within <a target="_blank" href="https://www.xero.com/uk/xero-tax/">Xero Tax</a>. I also contributed clarifying the roadmap for the Tax portfolio, a foundational piece to set the strategy for the mid to long term.
           </p>
         </div>
       </div>
 
-      <div class='row mb-5'>
-          <div class="col-md-12 job-desc mb-2">
-            <h2 class="mb-4">
-              <span class="circle-sketch">Zoopla</span>
-            </h2>
+      <div class='flex flex-wrap mb-5'>
+          <div class="w-full mb-2">
             <h3 class="mb-2">
-              Senior Product Designer, May 2020 - Nov 2021
+              <span class="circle-sketch">Zoopla</span>
             </h3>
+            <h4 class="mb-1">
+              Senior Product Designer, May 2020 - Nov 2021
+            </h4>
             <p>
               I designed the search and discovery experience at <a target="_blank" href="https://www.zoopla.co.uk/">Zoopla</a>, making it easier for people to find their next home. I led the redesign of the homepage, creating clearer paths into search and exploration. I also contributed to the Zoopla Design System and supported major tech migrations, ensuring consistency and quality across the product.
             </p>
           </div>
       </div>
 
-      <div class='row mb-5'>
-          <div class="col-md-12 job-desc mb-2">
-            <h2 class="mb-4">
-              <span class="highlight-sketch">PwC</span>
-            </h2>
+      <div class='flex flex-wrap mb-5'>
+          <div class="w-full mb-2">
             <h3 class="mb-2">
-              Senior Product Designer,  Jun 2019 - May 2020
+              <span class="highlight-sketch">PwC</span>
             </h3>
+            <h4 class="mb-1">
+              Senior Product Designer, Jun 2019 - May 2020
+            </h4>
             <p>
-            As part of  <a target="_blank" href="https://www.pwc.com/us/en/services/consulting/business-transformation/experience-center.html">PWC’s Experience Centre</a> team in London. I helped businesses understand what makes their customer tick in order to tackle major problems with simple solutions.
+            As part of <a target="_blank" href="https://www.pwc.com/us/en/services/consulting/business-transformation/experience-center.html">PWC's Experience Centre</a> team in London. I helped businesses understand what makes their customer tick in order to tackle major problems with simple solutions.
             </p>
           </div>
       </div>
 
-      <div class='row mb-5'>
-          <div class="col-md-12 job-desc mb-2">
+      <div class='flex flex-wrap mb-5'>
+          <div class="w-full mb-2">
             <p class="pb-2">Previous roles include Behavioural Design Team Lead at design consultancy Big Radical and Design Lead at Etch UK, both part of <a target="_blank" href="https://www.etchuk.com/">Etch Group</a>.</p>
             <p class="pb-2">I will forever be grateful to Nathan and Chris for taking a chance on me and showing me the ropes as a Junior Designer at 3Degrees all those years ago.</p>
           </div>
@@ -515,44 +360,32 @@
 
     </div>
   </div>
-
-    
-
 </section>
 
-<footer class="container">
-    <div class="col-md-10 offset-md-1 border-top pt-4 border-secondary">
+<footer class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto border-t pt-4 border-gray-300">
         <p class="mb-5">This site is ever evolving, I'll get to adding more detailed case studies soon. I hope.</p>   
     </div>
 </footer>
 
-</div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')
-    </script>
-<script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
-      </script>
+<script>
+  const fadeInElements = document.querySelectorAll('.fade-in');
 
-      <script>
-        const fadeInElements = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+          }
+      });
+  }, {
+      threshold: 0.1
+  });
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
+  fadeInElements.forEach(element => {
+      observer.observe(element);
+  });
+</script>
 
-        fadeInElements.forEach(element => {
-            observer.observe(element);
-        });
-    </script>
-
-    <!-- Bootstrap 5 JS Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body></html>
+</body>
+</html>

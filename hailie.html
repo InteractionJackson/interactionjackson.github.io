@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -13,80 +14,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Matt Jackson - Product Designer</title>
 
-<!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<!--
-/**
-* @license
-* MyFonts Webfont Build ID 709131
-*
-* The fonts listed in this notice are subject to the End User License
-* Agreement(s) entered into by the website owner. All other parties are
-* explicitly restricted from using the Licensed Webfonts(s).
-*
-* You may obtain a valid license from one of MyFonts official sites.
-* http://www.fonts.com
-* http://www.myfonts.com
-* http://www.linotype.com
-*
-*/
--->
-<link rel="stylesheet" type="text/css" href="css/MyWebfontsKit.css"/>
-<link rel="stylesheet" type="text/css" href="interactionjackson.css">
-<!-- Custom styles for this template -->
-<link href="css/style.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="css/tailwind.css" rel="stylesheet">
+    <!-- Custom effects CSS -->
+    <link rel="stylesheet" type="text/css" href="interactionjackson.css">
 </head>
 
-<body class="container">
+<body class="container mx-auto px-4">
 
-<section class='py-5 my-5'>
-    
-    <header class="col-md-10 offset-md-1">
-      <div class="d-flex flex-wrap justify-content-center align-middle">
-        <a class="d-flex  mb-md-0 me-md-auto margin-nudge-bottom" href="index.html">
-          <img  src="imgs/avatar.png" alt="Matt's memoji" width="64px" height="auto" title="Matt's avatar">
-        </a>
-        <ul class="nav nav-pills my-auto">
-        <li class="nav-item"><a href="about.html" class="nav-link" aria-current="page">About</a></li>
-        <li class="nav-item"><a href="https://medium.com/@MattJackson" target="_blank" class="nav-link" aria-current="page">Insights</a></li>
-        <li class="nav-item"><a href="https://www.linkedin.com/in/matthew-jackson-229a3544/" target="_blank" class="nav-link">LinkedIn</a></li>
+<section class='mt-5 sticky top-0 z-50 nav-shadow'>
+  <header class="container mx-auto px-4 mt-3 py-3">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-center items-center">
+      <a class="flex mb-0 mr-auto margin-nudge-bottom avatar-gradient" href="index.html">
+        <img src="imgs/mj-avatar.png" alt="Matt's memoji" width="56" height="56" title="Matt's avatar">
+      </a>
+      <ul class="flex space-x-4 my-auto">
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="https://medium.com/@MattJackson" target="_blank" class="nav-link">Insights</a></li>
+        <li><a href="https://www.linkedin.com/in/matthew-jackson-229a3544/" target="_blank" class="nav-link">LinkedIn</a></li>
       </ul>
-      </div>
-    </header>
-
+    </div>
+  </header>
 </section>
 
-<section class='col-md-8 offset-md-2'>
-
-    <div class="">
+<section class='max-w-4xl mt-5 mx-auto'>
+    <div>
       <h1 class="mb-5">Helping <span class="underline-sketch1">people</span> with asthma and COPD start <span class="underline-sketch2">strong</span> with Hailie</h1>
-      <div class="row mb-5">
-        <div class="col-md-4">
+      <div class="flex flex-wrap mb-5">
+        <div class="w-full md:w-1/3 mb-4 md:mb-0">
             <h4>Project</h4>
             <p>MVP validation and build</p>
         </div>   
-        <div class="col-md-4">
+        <div class="w-full md:w-1/3 mb-4 md:mb-0">
             <h4>Role</h4>
             <p>Lead Designer</p>
         </div>  
-        <div class="col-md-4">
+        <div class="w-full md:w-1/3">
             <h4>Company</h4>
             <p>Etch Group</p>
         </div>         
       </div>
-      <div class="d-flex align-items-center mb-5">
-            <img class="mx-auto" width="100%"  src="imgs/adheriumwork-2.png">
+      <div class="flex items-center mb-5">
+            <img class="mx-auto w-full" src="imgs/adheriumwork-2.png" alt="Hailie app interface">
       </div>
+    </div>
+</section>
+
+<section class='max-w-4xl mx-auto'>
       <div class="mb-5">
         <h2 class="mb-2">The challenge</h2>
         <p>
         Hailie had proven its smart inhaler technology in clinical trials, but moving into the U.S. consumer market meant facing a new challenge: how do you help people actually use it in their daily lives?
         </p>
           <p>
-        We knew that even the most innovative tech would fail if the experience wasn’t simple, welcoming, and motivating. For people managing asthma or COPD, every extra hurdle can mean frustration and eventually, disengagement.
+        We knew that even the most innovative tech would fail if the experience wasn't simple, welcoming, and motivating. For people managing asthma or COPD, every extra hurdle can mean frustration and eventually, disengagement.
         </p>
         <p>
-        That’s where onboarding became critical. A strong first experience could turn “just another health app” into a trusted companion.        
+        That's where onboarding became critical. A strong first experience could turn "just another health app" into a trusted companion.        
         </p>
       </div>
 
@@ -94,15 +78,15 @@
         <h2 class="mb-4">What I focussed on</h2>
           <h3 class="mb-2">1. Learning from people, not assumptions</h3>
         <p class="mb-4">
-            I worked with Hailie’s team to run interviews and surveys with people living with asthma and COPD. What stood out: people didn’t just want reminders — they wanted to feel like they were in control. Many said the first few days with a health product usually decided whether they’d stick with it.
+            I worked with Hailie's team to run interviews and surveys with people living with asthma and COPD. What stood out: people didn't just want reminders — they wanted to feel like they were in control. Many said the first few days with a health product usually decided whether they'd stick with it.
         </p>
           <h3 class="mb-2">2. Redesigning onboarding around success</h3>
         <p class="mb-4">
             Instead of dropping new users straight into setup screens, I designed a guided first-run experience that:
-            <ul>
-                <li class="pb-2"><strong>Framed the “why” early.</strong> Helping users connect their goals (like “walk my dog without worrying about wheezing”) to how Hailie could support them.</li>
+            <ul class="text-text-secondary">
+                <li class="pb-2"><strong>Framed the "why" early.</strong> Helping users connect their goals (like "walk my dog without worrying about wheezing") to how Hailie could support them.</li>
                 <li class="pb-2"><strong>Made setup feel easy.</strong> Clear steps, friendly language, and progress indicators that built confidence rather than anxiety.</li>
-                <li class="pb-3"><strong>Set expectations for value.</strong> Showing what they’d get out of Hailie in the first week (insights, nudges, and peace of mind).</li>
+                <li class="pb-3"><strong>Set expectations for value.</strong> Showing what they'd get out of Hailie in the first week (insights, nudges, and peace of mind).</li>
             </ul>
         </p>
           <h3 class="mb-2">3. Nudging engagement after onboarding</h3>
@@ -110,71 +94,58 @@
             We paired onboarding with simple, contextual nudges — like reminders tailored to weather or activity — that helped people feel supported without nagged.
         </p>
       </div>
-        <div class="row mb-5">
-            <div class="col-md-6">
-                <div class="d-flex align-items-center">
-                    <img class="mx-auto" width="100%"  src="imgs/adheriumwork-6.png">
+        <div class="flex flex-wrap mb-5 gap-4">
+            <div class="w-full md:w-[48%]">
+                <div class="flex items-center">
+                    <img class="mx-auto w-full" src="imgs/adheriumwork-6.png" alt="Testing the inhaler">
                 </div>
                 <p class="mx-3">Testing the inhaler</p>
             </div>   
-            <div class="col-md-6">
-                <div class="d-flex align-items-center">
-                    <img class="mx-auto" width="100%"  src="imgs/adheriumwork-4.png">
+            <div class="w-full md:w-[48%]">
+                <div class="flex items-center">
+                    <img class="mx-auto w-full" src="imgs/adheriumwork-4.png" alt="Personas and prototype">
                 </div>
                 <p class="mx-3">Personas and building the prototype</p>
             </div>        
         </div>
-      <div class="d-flex align-items-center mb-5">
-            <img class="mx-auto" width="100%"  src="imgs/adheriumwork-2.png">
+      <div class="flex items-center mb-5">
+            <img class="mx-auto w-full" src="imgs/adheriumwork-2.png" alt="Hailie app screens">
         </div>
       <div class="mb-5">
         <h2 class="mb-2">The outcome</h2>
         <p class="mb-4">
-            This shift in focus from “get people into the app” to “set people up for success” gave Hailie a much stronger foundation for engagement.
+            This shift in focus from "get people into the app" to "set people up for success" gave Hailie a much stronger foundation for engagement.
         </p>
-            <ul class="">
+            <ul class="text-text-secondary">
                 <li class="pb-2">Users left onboarding feeling clear about the value of the product.</li>
                 <li class="pb-2">Setup friction dropped, making adoption smoother.</li>
-                <li class="pb-3">The app’s early interactions felt encouraging and personal, not clinical or cold.</li>
+                <li class="pb-3">The app's early interactions felt encouraging and personal, not clinical or cold.</li>
             </ul>
           <p>
               By grounding onboarding in empathy and real user goals, we turned the first touchpoint into a moment of trust — one that encouraged people to keep coming back.
             </p>
-        <div class="d-flex align-items-center mb-5">
-            <img class="mx-auto" width="100%"  src="imgs/adheriumwork-5.png">
+        <div class="flex items-center mb-5">
+            <img class="mx-auto w-full" src="imgs/adheriumwork-5.png" alt="Hailie outcome">
       </div>
       
         <div class="mb-5">
             <h2 class="mb-2">Why this mattered</h2>
             <p class="mb-3">
-                For Hailie, better onboarding wasn’t just a UX improvement, it was a business strategy. Helping people start strong meant higher retention, more engaged customers, and ultimately a better chance at success in a new market.
+                For Hailie, better onboarding wasn't just a UX improvement, it was a business strategy. Helping people start strong meant higher retention, more engaged customers, and ultimately a better chance at success in a new market.
             </p>
             <p class="mb-3">
                 For me, it was a reminder that the first mile of the journey often decides the whole trip. Thoughtful onboarding can turn intention into habit, and in this case, help people breathe easier in more ways than one. 
             </p>
-            <!--
-             <ul class="">
-                  <li class="list-group-item pb-2"> $50 million in funding</li>
-                  <li class="list-group-item pb-2"> Users became more informed about what triggered their asthma</li>
-                  <li class="list-group-item pb-2">They could have better conversations with their clinicians about their condition</li>
-                  <li class="list-group-item pb-2">The business had a viable product to release into the US market.</li>
-                  <li class="list-group-item pb-2">Launched in the US</li>
-                  <li class="list-group-item pb-2">80 page document comprised of a review and recommendation summary of the app that was redesigned by New Deal Design (The redesign was largely based on my initial 8 weeks of work!)</li>-->
         </div>
-        <div class="d-flex align-items-center mb-5">
-            <img class="mx-auto" width="100%"  src="imgs/adheriumwork-7.png">
+        <div class="flex items-center mb-5">
+            <img class="mx-auto w-full" src="imgs/adheriumwork-7.png" alt="Final result">
         </div>
       </div>
-</section >
+</section>
 
-
-
-<footer class="col-md-12 border-top pt-4 border-secondary">
+<footer class="w-full border-t pt-4 border-gray-300 mt-5">
     <p class="mb-5">This site is ever evolving, I'll get to adding more detailed case studies soon. I hope.</p>    
 </footer>
 
-</div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
-
-</body></html>
+</body>
+</html>
