@@ -206,3 +206,35 @@ body {
     padding: 3.5rem;
   }
 }
+
+/* Company history: app icon beside the role, stacked on mobile */
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .company {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Icon PNGs include a baked-in drop shadow and padding; the 80px box is the
+   visible tile, with the image scaled so the shadow spills outside it */
+.company-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.company-icon img {
+  position: absolute;
+  top: -2.2px;
+  left: -2.2px;
+  width: 107.5px;
+  max-width: none;
+  height: auto;
+}
