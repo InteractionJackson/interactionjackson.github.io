@@ -291,3 +291,12 @@ body {
 .case-study .mb-5 > * + h3 {
   margin-top: 56px;
 }
+
+/* Case study quotes as a callout card (styled after Stripe's ArticleCallout) */
+.case-study blockquote.blockquote {
+  padding: 16px;
+  border: 1px solid #E6ECF2;
+  border-radius: 8px;
+  background-color: #F6F9FC;
+  font-style: normal;
+}
