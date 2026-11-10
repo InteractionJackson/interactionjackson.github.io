@@ -238,3 +238,56 @@ body {
   max-width: none;
   height: auto;
 }
+
+/* Content bullet lists (styled after Stripe's guide lists) */
+.bullets {
+  margin: 24px 0;
+  padding-left: 40px;
+  color: rgb(75 81 67);
+  letter-spacing: -0.3px;
+}
+
+.bullets li {
+  position: relative;
+}
+
+.bullets li + li {
+  margin-top: 16px;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  /* Vertically centre the dot on the first line (line-height is 170%) */
+  top: calc(0.85em - 4px);
+  left: -23px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+/* Lists whose items carry their own marker (e.g. ✅) */
+.bullets-none {
+  padding-left: 0;
+}
+
+.bullets-none li::before {
+  content: none;
+}
+
+/* Case study body spacing (styled after Stripe's guides):
+   24px between text blocks, 56px above a sub-heading.
+   Overrides the per-element mb-* utilities inside text groups. */
+.case-study .mb-5 > :is(h2, h3, p, ul, blockquote) {
+  margin-bottom: 0;
+}
+
+.case-study .mb-5 > * + :is(p, ul, blockquote),
+.case-study .mb-5 > :is(p, ul, blockquote) + div {
+  margin-top: 24px;
+}
+
+.case-study .mb-5 > * + h3 {
+  margin-top: 56px;
+}
