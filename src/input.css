@@ -63,6 +63,8 @@
 
   p {
     @apply font-regular text-text-secondary;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.3px;
   }
 
   a {
