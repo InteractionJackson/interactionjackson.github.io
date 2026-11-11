@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font faces */
+/* Font faces (TT Commons is self-hosted; Inter loads from Google Fonts in each page <head>) */
 @font-face {
   font-family: "TTCommonsProBold";
-  src: url('../webFonts/TTCommonsProBold/font.woff2') format('woff2'), 
+  src: url('../webFonts/TTCommonsProBold/font.woff2') format('woff2'),
        url('../webFonts/TTCommonsProBold/font.woff') format('woff');
   font-weight: 700;
   font-style: normal;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "TTCommonsProDemiBold";
-  src: url('../webFonts/TTCommonsProDemiBold/font.woff2') format('woff2'), 
+  src: url('../webFonts/TTCommonsProDemiBold/font.woff2') format('woff2'),
        url('../webFonts/TTCommonsProDemiBold/font.woff') format('woff');
   font-weight: 600;
   font-style: normal;
@@ -23,122 +23,252 @@
 
 @font-face {
   font-family: "TTCommonsProRegular";
-  src: url('../webFonts/TTCommonsProRegular/font.woff2') format('woff2'), 
+  src: url('../webFonts/TTCommonsProRegular/font.woff2') format('woff2'),
        url('../webFonts/TTCommonsProRegular/font.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
+/* Design tokens */
+:root {
+  /* Palette: six colours */
+  --color-text-primary: #2B353E;   /* headings, button labels, primary links, active nav */
+  --color-text-secondary: #525252; /* body copy, descriptions, metadata, secondary nav */
+  --color-canvas: #FBFCFE;         /* page background */
+  --color-surface: #F0F4FA;        /* project image containers, secondary buttons */
+  --color-line: #E4EBF6;           /* surface and button outlines */
+  --color-accent: #D2FF00;         /* primary button backgrounds */
+
+  /* Main column */
+  --column-max: 55rem;             /* 880px */
+  --gutter: 24px;
+  /* Distance from the viewport edge to the column edge, for full-bleed rows */
+  --column-inset: max(var(--gutter), calc((100vw - var(--column-max)) / 2));
+}
+
 /* Base typography */
 @layer base {
   html, body {
-    @apply font-regular text-base text-black bg-white;
+    @apply bg-canvas text-text-secondary;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: -0.02em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
 
+  h1, h2, h3, h4, h5 {
+    @apply font-bold text-text-primary;
+    font-weight: 700;
+  }
+
+  /* Default heading sizes (used by case-study and About pages) */
   h1 {
-    @apply font-bold text-text-primary leading-tight;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
   h2 {
-    @apply font-bold text-text-heading leading-tight;
-    font-size: 40px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
   h3 {
-    @apply font-demibold text-text-heading;
-    font-size: 32px;
+    font-size: 1.625rem;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
   }
 
   h4, h5 {
-    @apply font-demibold text-text-heading;
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
   }
 
-  p {
-    @apply font-regular text-text-secondary;
-    font-family: "Inter", sans-serif;
-    letter-spacing: -0.3px;
+  @media (min-width: 768px) {
+    h1 { font-size: 3.75rem; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 2rem; }
   }
 
+  p, ul {
+    @apply text-text-secondary;
+  }
+
+  /* Inline links: primary text colour, identified by an underline */
   a {
-    @apply text-brand-purple no-underline transition-colors;
+    @apply text-text-primary underline transition-colors;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
   }
 
   a:hover {
-    @apply text-brand-purple-dark;
+    text-decoration-thickness: 2px;
   }
 
   strong {
-    @apply font-bold;
+    font-weight: 600;
+    @apply text-text-primary;
+  }
+
+  small {
+    font-size: 14px;
+    line-height: 23.8px;
+  }
+
+  /* Keyboard focus: visible, on-palette ring */
+  :focus-visible {
+    outline: 2px solid var(--color-text-primary);
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 }
 
 /* Custom components */
 @layer components {
+  /* Type roles */
+  .type-hero {
+    @apply font-bold text-text-primary;
+    font-size: clamp(1.75rem, 1.2rem + 2.6vw, 2.5rem); /* 28px → 40px */
+    line-height: 1.15;                                 /* 46px at 40px */
+    letter-spacing: -0.02em;
+  }
+
+  .type-statement {
+    @apply font-bold text-text-primary;
+    font-size: clamp(1.75rem, 1.2rem + 2.6vw, 2.5rem); /* 28px → 40px */
+    line-height: 1.1;                                  /* 44px at 40px */
+    letter-spacing: -0.02em;
+  }
+
+  .type-project {
+    @apply font-bold text-text-primary;
+    font-size: clamp(1.625rem, 1.25rem + 1.5vw, 2rem); /* 26px → 32px */
+    line-height: 1.1;                                  /* 35.2px at 32px */
+    letter-spacing: -0.03em;
+  }
+
+  .type-company {
+    @apply font-bold text-text-primary;
+    font-size: clamp(1.625rem, 1.25rem + 1.5vw, 2rem); /* 26px → 32px */
+    line-height: 1.5;                                  /* 48px at 32px */
+    letter-spacing: -0.03em;
+  }
+
+  .type-eyebrow {
+    @apply font-bold text-text-primary uppercase;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: -0.02em;
+  }
+
+  .type-role {
+    @apply text-text-secondary;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: -0.02em;
+  }
+
+  .type-small {
+    @apply text-text-secondary;
+    font-size: 14px;
+    line-height: 23.8px;
+    letter-spacing: -0.02em;
+  }
+
+  /* Hero: 30px between paragraphs */
+  .hero > * + * {
+    margin-top: 30px;
+  }
+
   /* Buttons */
   .btn {
-    @apply font-demibold text-sm inline-block w-auto tracking-wide rounded-2xl transition-all;
+    @apply relative inline-flex items-center justify-center w-auto font-bold text-text-primary no-underline rounded-btn border border-transparent transition-colors;
+    font-size: 14px;
+    line-height: 15.4px;
+    letter-spacing: -0.01em;
     padding: 8px 12px;
   }
 
+  /* Extend the hit area to ~44px tall without changing the visual size */
+  .btn::after {
+    content: "";
+    position: absolute;
+    inset: -6px 0;
+  }
+
+  .btn:hover {
+    @apply text-text-primary border-text-primary;
+  }
+
   .btn-primary {
-    @apply bg-mint text-white border border-mint hover:bg-[#0a2540] hover:border-[#0a2540] hover:text-white;
+    @apply bg-accent;
   }
 
   .btn-light {
-    @apply bg-[#f9fafb] text-black border border-[#e7ebee] hover:bg-[#c2ccd6] hover:border-[#f9fafb];
+    @apply bg-surface border-line;
   }
 
-  .btn-arrow {
-    @apply inline-flex items-center;
+  .btn-light:hover {
+    @apply border-text-primary;
+  }
+
+  .btn-group {
+    @apply flex flex-wrap items-center gap-2;
+  }
+
+  /* Keep icon buttons the same height as text-only buttons */
+  .btn svg:not(.arrow-icon) {
+    width: 16px;
+    height: 16px;
+    margin-block: -1px;
   }
 
   .btn-arrow .arrow-icon {
     @apply ml-2 w-[6px] overflow-visible;
   }
 
-  /* Links */
-  .monzo-link {
-    @apply transition-colors;
-    color: #FF4F40;
-  }
-
-  .monzo-link:hover {
-    color: #B42929;
-  }
-
   /* Navigation */
   .nav-link {
-    @apply text-[#8893AF] font-bold uppercase transition-all;
+    @apply font-bold uppercase no-underline text-text-secondary transition-colors;
     font-size: 16px;
+    line-height: normal;
+    letter-spacing: -0.01em;
   }
 
-  .nav-link:hover {
-    @apply bg-gradient-to-r from-[#4158D0] via-[#C850C0] to-[#FFCC70] bg-clip-text text-transparent;
+  .nav-link:hover,
+  .nav-link[aria-current="page"] {
+    @apply text-text-primary;
   }
 
   .nav-shadow {
-    @apply rounded-3xl bg-white/80 backdrop-blur-xs;
+    @apply rounded-3xl backdrop-blur-xs;
+    background-color: rgb(251 252 254 / 0.8); /* canvas at 80% */
   }
 
-  /* Cards */
+  /* Surfaces: flat, outlined with the border token */
+  .border-subtle {
+    @apply border border-line;
+  }
+
+  .work {
+    @apply bg-surface border border-line;
+  }
+
+  /* Testimonial cards */
   .card {
-    @apply min-h-[549px] max-h-[550px];
+    @apply min-h-[549px];
   }
 
   .card-quote {
-    @apply transition-all duration-200;
-  }
-
-  .card-quote:hover {
-    @apply -translate-y-1 shadow-lg;
+    @apply bg-surface border border-line rounded-4xl;
   }
 
   .quote-text {
@@ -149,45 +279,16 @@
     min-width: 420px;
   }
 
-  /* Work sections */
-  .work {
-    @apply bg-blue-subtle;
-  }
-
   /* Blockquote */
   .blockquote {
-    @apply border-l border-black pl-6 italic;
+    @apply border-l border-text-primary pl-6 italic;
   }
 
-  /* Intro text */
-  .intro {
-    @apply leading-[170%];
-    font-size: 1.5rem;
-  }
-
-  /* Avatar styles */
+  /* Avatar */
   .avatar-36 {
     @apply object-cover;
     width: 56px;
     height: 56px;
-  }
-
-  .avatar-gradient {
-    @apply rounded-full bg-gradient-to-r from-[#8EC5FC] to-[#E0C3FC] bg-[length:800%_800%] animate-gradient;
-  }
-
-  /* Metrics */
-  .metrics p {
-    @apply text-base text-brand-purple;
-  }
-
-  .metrics h3 {
-    @apply text-4xl normal-case tracking-normal;
-  }
-
-  /* Border subtle */
-  .border-subtle {
-    @apply border border-black/5;
   }
 }
 
@@ -196,43 +297,4 @@
   .text-wrap-pretty {
     text-wrap: pretty;
   }
-
-  /* Responsive font sizes */
-  @media screen and (min-width: 320px) {
-    h1 {
-      @apply text-5xl leading-[110%];
-    }
-    
-    h4 {
-      @apply text-lg;
-    }
-    
-    p, ul {
-      font-size: 1.125rem;
-      line-height: 170%;
-    }
-  }
-
-  @media screen and (min-width: 600px) {
-    h1 {
-      @apply text-6xl leading-[110%];
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    h1 {
-      @apply text-6xl leading-[110%];
-    }
-  }
 }
-
-/* Animation keyframes */
-@keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-

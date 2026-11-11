@@ -15,30 +15,32 @@
     <title>Matt Jackson - Product Designer</title>
 
     <!-- Tailwind CSS -->
-    <link href="css/tailwind.css?v=4" rel="stylesheet">
+    <link href="css/tailwind.css?v=5" rel="stylesheet">
     <!-- Custom effects CSS -->
-    <link rel="stylesheet" type="text/css" href="interactionjackson.css?v=5">
+    <link rel="stylesheet" type="text/css" href="interactionjackson.css?v=6">
     <script src="js/ij-skull.js" defer></script>
 </head>
 
-<body class="container mx-auto px-4">
+<body>
 
-<section class='mt-5 sticky top-0 z-50 nav-shadow'>
-  <header class="container mx-auto px-4 mt-3 py-3">
-    <div class="max-w-6xl mx-auto flex flex-wrap justify-center items-center">
-      <a class="flex mb-0 mr-auto margin-nudge-bottom" href="index.html">
-        <img src="imgs/ij-skull.svg" alt="Jackson's skull" width="56" height="56" title="IJ Skull">
-      </a>
-      <ul class="flex space-x-4 my-auto">
+<div class="sticky top-0 z-50 mt-5 px-3 nav-shadow">
+  <header class="mx-auto w-full max-w-content flex items-center justify-between gap-3 py-3">
+    <a class="flex no-underline" href="index.html">
+      <img src="imgs/ij-skull.svg" alt="Jackson's skull" width="56" height="56" title="IJ Skull">
+    </a>
+    <nav aria-label="Main">
+      <ul class="flex gap-3">
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="https://medium.com/@MattJackson" target="_blank" class="nav-link">Insights</a></li>
         <li><a href="https://www.linkedin.com/in/matthew-jackson-229a3544/" target="_blank" class="nav-link">LinkedIn</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
-</section>
+</div>
 
-<section class='max-w-4xl mt-3 mx-auto case-study'>
+<div class="px-3">
+
+<section class='max-w-content mt-3 mx-auto case-study'>
     <div>
       <h1 class="my-5 pt-3">Helping product teams <span class="underline-sketch2">learn</span> from <span class="circle-sketch">real</span> people, faster</h1>
       <div class="flex flex-wrap mb-5">
@@ -169,9 +171,10 @@
       </div>
 </section>
 
-<footer class="w-full border-t pt-4 border-gray-300 mt-5">
-    <p class="mb-5">This site is ever evolving, I'll get to adding more detailed case studies soon. I hope.</p>    
+<footer class="w-full border-t pt-4 border-line mt-5">
+    <p class="type-small mb-5">This site is ever evolving, I'll get to adding more detailed case studies soon. I hope.</p>    
 </footer>
+</div>
 
 </body>
 </html>
