@@ -1,11 +1,12 @@
 /* Custom sketch and effect styles - preserved from original design */
 
-/* Prevent page-wide horizontal scroll */
+/* Prevent page-wide horizontal scroll. `clip` (unlike `hidden`) does not
+   create a scroll container, so the sticky header keeps working. */
 html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* Sketch underlines and highlights */
@@ -93,8 +94,6 @@ body {
 }
 
 .cards-viewport-container {
-  padding-left: 32px;
-  padding-right: 32px;
   overflow-x: hidden;
   overflow-y: visible;
 }
@@ -107,7 +106,9 @@ body {
   overscroll-behavior-inline: contain;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  padding: 1rem 0 2rem 0;
+  /* First card lines up with the 880px column; the track bleeds to the right */
+  padding: 1rem max(24px, calc((100% - 55rem) / 2)) 2rem;
+  scroll-padding-inline: max(24px, calc((100% - 55rem) / 2));
   margin: -1rem 0 -2rem 0;
 }
 
@@ -125,9 +126,11 @@ body {
 }
 
 .cards-track > .card-wrap {
-  flex: 0 0 420px;
-  min-width: 420px;
+  /* 420px cards, narrowed on small screens so one fits inside the gutters */
+  flex: 0 0 min(420px, calc(100vw - 48px));
+  min-width: 0;
   scroll-snap-align: start;
+  align-self: flex-start; /* keep the staggered (offset) card rhythm */
 }
 
 .quote-text {
@@ -152,16 +155,16 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #f9fafb;
-  border: 1px solid #e7ebee;
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: border-color 0.2s ease;
   flex-shrink: 0;
 }
 
 .carousel-btn:hover:not(:disabled) {
-  background: #c2ccd6;
-  border-color: #f9fafb;
+  border-color: var(--color-text-primary);
 }
 
 .carousel-btn:disabled {
@@ -172,39 +175,6 @@ body {
 .carousel-btn svg {
   width: 24px;
   height: 24px;
-}
-
-/* Responsive adjustments */
-@media screen and (min-width: 320px) {
-  .margin-nudge-bottom {
-    margin-bottom: 1rem;
-  }
-  
-  .work-desc {
-    padding: 2rem;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .margin-nudge-bottom {
-    margin-bottom: 0rem;
-  }
-  
-  .work-desc {
-    padding: 3rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .cards-viewport-container {
-    margin-left: 8.333%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .work-desc {
-    padding: 3.5rem;
-  }
 }
 
 /* Company history: app icon beside the role, stacked on mobile */
@@ -243,8 +213,7 @@ body {
 .bullets {
   margin: 24px 0;
   padding-left: 40px;
-  color: rgb(75 81 67);
-  letter-spacing: -0.3px;
+  color: var(--color-text-secondary);
 }
 
 .bullets li {
@@ -295,8 +264,8 @@ body {
 /* Case study quotes as a callout card (styled after Stripe's ArticleCallout) */
 .case-study blockquote.blockquote {
   padding: 16px;
-  border: 1px solid #E6ECF2;
+  border: 1px solid var(--color-line);
   border-radius: 8px;
-  background-color: #F6F9FC;
+  background-color: var(--color-surface);
   font-style: normal;
 }

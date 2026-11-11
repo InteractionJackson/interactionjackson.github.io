@@ -73,22 +73,43 @@ This command will:
 
 ## Customization
 
-### Colors
+### Colours
 
-Custom colors are defined in `tailwind.config.js`:
-- `mint` - #59F1BC
-- `teal` - #89DBE6
-- `orange` - #F1BC58
-- `blue-subtle` - #F6F9FC
+The palette is six semantic tokens. Values live as CSS variables in `src/input.css` (`:root`) and are exposed to Tailwind in `tailwind.config.js`:
+
+| Token | Value | Tailwind | Usage |
+|---|---|---|---|
+| Primary text | #2B353E | `text-text-primary` | Headings, button labels, links, active nav |
+| Secondary text | #525252 | `text-text-secondary` | Body copy, descriptions, metadata, secondary nav |
+| Page background | #FBFCFE | `bg-canvas` | Main canvas |
+| Subtle surface | #F0F4FA | `bg-surface` | Project image containers, secondary buttons |
+| Border | #E4EBF6 | `border-line` | Surface and button outlines |
+| Accent | #D2FF00 | `bg-accent` | Primary button backgrounds |
+
+`mint`, `teal` and `orange` remain only for the About page principle cards.
+
+### Layout
+
+Page content sits in a centred 880px column (`max-w-content`) with 24px outer gutters (`px-3`):
+
+```html
+<div class="px-3">
+  <div class="mx-auto w-full max-w-content">…</div>
+</div>
+```
+
+Note the spacing scale is 8px-based (`px-3` = 24px, `mb-12` = 96px).
 
 ### Fonts
 
-The site uses the TTCommonsPro font family:
-- `font-bold` - TTCommonsProBold
-- `font-demibold` - TTCommonsProDemiBold
-- `font-regular` - TTCommonsProRegular
+- TT Commons (self-hosted in `webFonts/`): headings, navigation and buttons (`font-bold`)
+- Inter (Google Fonts): body copy (default `font-sans`)
 
-Font faces are loaded in `src/input.css`.
+Type roles are component classes in `src/input.css`: `.type-hero`, `.type-statement`, `.type-project`, `.type-company`, `.type-eyebrow`, `.type-role`, `.type-small`.
+
+### Buttons
+
+`.btn` plus `.btn-primary` (accent) or `.btn-light` (surface with border). Wrap adjacent buttons in `.btn-group` for a 16px gap.
 
 ### Custom Effects
 

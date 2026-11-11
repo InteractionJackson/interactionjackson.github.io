@@ -11,257 +11,231 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Matt Jackson - Product Designer</title>
 
     <!-- Tailwind CSS -->
-    <link href="css/tailwind.css?v=4" rel="stylesheet">
+    <link href="css/tailwind.css?v=5" rel="stylesheet">
     <!-- Custom effects CSS -->
-    <link rel="stylesheet" type="text/css" href="interactionjackson.css?v=5">
+    <link rel="stylesheet" type="text/css" href="interactionjackson.css?v=6">
     <script src="js/ij-skull.js" defer></script>
 </head>
 
 <body>
 
-<section class='mt-5 sticky top-0 z-50 nav-shadow'>
-  <header class="container mx-auto px-4 mt-3 py-3">
-    <div class="max-w-6xl mx-auto flex flex-wrap justify-center items-center">
-      <a class="flex mb-0 mr-auto margin-nudge-bottom" href="index.html">
-        <img src="imgs/ij-skull.svg" alt="Jackson's skull" width="56" height="56" title="IJ Skull">
-      </a>
-      <ul class="flex space-x-4 my-auto">
+<div class="sticky top-0 z-50 mt-5 px-3 nav-shadow">
+  <header class="mx-auto w-full max-w-content flex items-center justify-between gap-3 py-3">
+    <a class="flex no-underline" href="index.html">
+      <img src="imgs/ij-skull.svg" alt="Jackson's skull" width="56" height="56" title="IJ Skull">
+    </a>
+    <nav aria-label="Main">
+      <ul class="flex gap-3">
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="https://medium.com/@MattJackson" target="_blank" class="nav-link">Insights</a></li>
         <li><a href="https://www.linkedin.com/in/matthew-jackson-229a3544/" target="_blank" class="nav-link">LinkedIn</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
-</section>
+</div>
 
-<section class='container mx-auto mt-5 my-section'>
-  <div class="max-w-6xl mx-auto mb-5 pt-1">
-    <div class="mt-5 text-left py-3">
-      <h1 class="mb-5">👋 Hello there, I'm <span class="underline-sketch1">Matt</span>.</h1> 
-      <h1 class="mb-5">I design experiences that feel <span class="circle-sketch">simple</span> and <span class='underline-sketch2'>human</span>, yet go <span class="underline-sketch3">beyond</span> the ordinary.</h1>
-      <h1 class="mb-5">Currently, I'm a Staff Product Designer at <a class="wise-link" target="_blank" href="https://wise.com/">Wise</a>.</h1>
-    </div>
-  </div>
-</section>
+<main>
+  <div class="px-3">
+    <div class="mx-auto w-full max-w-content">
 
-<section class="container mx-auto px-4 my-section">
+      <section class="hero pt-8 md:pt-12 mb-8 md:mb-12" aria-label="Introduction">
+        <h1 class="type-hero">👋 Hello there, I'm <span class="underline-sketch1">Matt</span>.</h1>
+        <p class="type-hero">I design experiences that feel <span class="circle-sketch">simple</span> and <span class='underline-sketch2'>human</span>, yet go <span class="underline-sketch3">beyond</span> the ordinary.</p>
+        <p class="type-hero">Currently, I'm a Staff Product Designer at <a target="_blank" href="https://wise.com/">Wise</a>.</p>
+      </section>
 
-<!--Monzo safety net-->
-<div class="max-w-6xl mx-auto pb-5 mb-section">
-  <div class="flex flex-wrap fade-in gap-8">
-      <div class="w-full bg-blue-subtle items-center border-subtle rounded-5xl mb-4">
-            <img class="mx-auto w-full" src="imgs/safetynet-case.png" alt="Monzo safety net case study">
-      </div>
-  </div>
-  <div class="flex flex-wrap px-4 fade-in gap-8">
-      <div class="w-full md:w-1/3 my-4">
-            <h4 class="py-1">MONZO BANK</h4>
-            <p>Lead Product Designer</p>
-      </div>
-      <div class="w-full md:w-7/12 my-4 self-center">
-            <h2 class="pb-3">Building a financial safety net, one milestone at a time</h2>
-            <p class="pb-3">Knowing what a good financial safety net looks like isn’t always easy. I introduced savings milestones into Monzo’s safety net flow to give people clearer goals and make progress easier to recognise. The aim was to make building a financial buffer feel more achievable and help people stay motivated to keep saving.</p>
-            <div class="flex flex-col items-start mt-2">
-              <a class="btn btn-light inline-flex items-center" href="#">
-                <svg class="mr-2" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      <section aria-label="Selected work">
+      <article class="mb-8 md:mb-12">
+        <div class="fade-in bg-surface border-subtle rounded-6xl overflow-hidden">
+          <img class="w-full" src="imgs/safetynet-case.png" alt="Monzo safety net case study">
+        </div>
+        <div class="fade-in mt-3 md:mt-5 flex flex-col md:flex-row gap-2 md:gap-5">
+          <div class="md:w-1/3 shrink-0">
+            <p class="type-eyebrow">MONZO BANK</p>
+            <p class="type-role">Lead Product Designer</p>
+          </div>
+          <div class="md:flex-1">
+            <h2 class="type-project mb-2">Building a financial safety net, one milestone at a time</h2>
+            <p>Knowing what a good financial safety net looks like isn’t always easy. I introduced savings milestones into Monzo’s safety net flow to give people clearer goals and make progress easier to recognise. The aim was to make building a financial buffer feel more achievable and help people stay motivated to keep saving.</p>
+            <div class="btn-group mt-3">
+              <a class="btn btn-light" href="#">
+                <svg class="mr-2" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 Case study coming soon
               </a>
             </div>
-      </div>
-  </div>  
-</div>
-
-
-<!--Monzo search-->
-<div class="max-w-6xl mx-auto pb-5 mb-section">
-  <div class="flex flex-wrap fade-in gap-8">
-      <div class="w-full bg-blue-subtle items-center border-subtle rounded-5xl mb-4">
-            <img class="mx-auto w-full" src="imgs/monzosearch-case-hero.png" alt="Monzo search case study">
-      </div>
-  </div>
-  <div class="flex flex-wrap px-4 fade-in gap-8">
-      <div class="w-full md:w-1/3 my-4">
-            <h4 class="py-1">MONZO BANK</h4>
-            <p>Lead Product Designer</p>
-      </div>
-      <div class="w-full md:w-7/12 my-4 self-center">
-            <h2 class="pb-3">The next generation of search for everyday banking</h2>
-            <p class="pb-3">Search was one of Monzo's most-used yet underdeveloped features. People struggled to find what they needed or discover what was possible. We set out to make it faster, smarter, and more helpful. Shifting banking from a task of compliance ("I'm doing banking") to collaboration ("my bank is helping me make sense of this").</p>
-            <div class="flex flex-col items-start mt-2">
-              <a class="btn btn-light inline-flex items-center" href="#">
-                <svg class="mr-2" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+        </div>
+      </article>
+      <article class="mb-8 md:mb-12">
+        <div class="fade-in bg-surface border-subtle rounded-6xl overflow-hidden">
+          <img class="w-full" src="imgs/monzosearch-case-hero.png" alt="Monzo search case study">
+        </div>
+        <div class="fade-in mt-3 md:mt-5 flex flex-col md:flex-row gap-2 md:gap-5">
+          <div class="md:w-1/3 shrink-0">
+            <p class="type-eyebrow">MONZO BANK</p>
+            <p class="type-role">Lead Product Designer</p>
+          </div>
+          <div class="md:flex-1">
+            <h2 class="type-project mb-2">The next generation of search for everyday banking</h2>
+            <p>Search was one of Monzo's most-used yet underdeveloped features. People struggled to find what they needed or discover what was possible. We set out to make it faster, smarter, and more helpful. Shifting banking from a task of compliance ("I'm doing banking") to collaboration ("my bank is helping me make sense of this").</p>
+            <div class="btn-group mt-3">
+              <a class="btn btn-light" href="#">
+                <svg class="mr-2" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 Case study coming soon
               </a>
             </div>
-      </div>
-  </div>  
-</div>
-
-<!--1Password-->
-<div class="max-w-6xl mx-auto pb-5 mb-section">
-  <div class="flex flex-wrap fade-in gap-8">
-      <div class="w-full bg-blue-subtle items-center border-subtle rounded-5xl mb-4">
-            <img class="mx-auto w-full" src="imgs/1Password-case.png" alt="1Password case study">
-      </div>
-  </div>
-  <div class="flex flex-wrap px-4 fade-in gap-8">
-      <div class="w-full md:w-1/3 my-4">
-            <h4 class="py-1">1PASSWORD</h4>
-            <p>Staff Product Designer</p>
-      </div>
-      <div class="w-full md:w-7/12 my-4 self-center">
-            <h2 class="pb-3">Enabling product teams learn from real people, faster</h2>
-            <p class="pb-3">I led the design of a new way for teams to quickly test ideas with customers. This gave us clearer signals on which features truly matter, so the business could double-down on delivering the stuff that makes the biggest difference for people using our apps.</p>
-            <div class="flex flex-col items-start mt-2">
+          </div>
+        </div>
+      </article>
+      <article class="mb-8 md:mb-12">
+        <div class="fade-in bg-surface border-subtle rounded-6xl overflow-hidden">
+          <img class="w-full" src="imgs/1Password-case.png" alt="1Password case study">
+        </div>
+        <div class="fade-in mt-3 md:mt-5 flex flex-col md:flex-row gap-2 md:gap-5">
+          <div class="md:w-1/3 shrink-0">
+            <p class="type-eyebrow">1PASSWORD</p>
+            <p class="type-role">Staff Product Designer</p>
+          </div>
+          <div class="md:flex-1">
+            <h2 class="type-project mb-2">Enabling product teams learn from real people, faster</h2>
+            <p>I led the design of a new way for teams to quickly test ideas with customers. This gave us clearer signals on which features truly matter, so the business could double-down on delivering the stuff that makes the biggest difference for people using our apps.</p>
+            <div class="btn-group mt-3">
               <a class="btn btn-primary btn-arrow" href="labs.html">Read case study
-                <svg class="arrow-icon" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g class="arrow-head">
-                      <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
-                    </g>
-                    <g class="arrow-body">
-                      <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
-                    </g>
-                  </svg>
+                <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g class="arrow-head">
+                    <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
+                  </g>
+                  <g class="arrow-body">
+                    <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
+                  </g>
+                </svg>
               </a>
-              <br>
               <a target="_blank" class="btn btn-light btn-arrow" href="https://blog.1password.com/labs-experimental-features/">1Password's release announcement
-              <svg class="arrow-icon" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g class="arrow-head">
-                      <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
-                    </g>
-                    <g class="arrow-body">
-                      <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
-                    </g>
-                  </svg>
-                </a>
+                <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g class="arrow-head">
+                    <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
+                  </g>
+                  <g class="arrow-body">
+                    <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
+                  </g>
+                </svg>
+              </a>
             </div>
-      </div>
-  </div>  
-</div>
-
-<!--Keepnet-->
-<div class="max-w-6xl mx-auto pb-5 mb-section">
-  <div class="flex flex-wrap fade-in gap-8">
-      <div class="w-full bg-blue-subtle items-center border-subtle rounded-5xl mb-4">
-            <img class="mx-auto w-full" src="imgs/keepnet-case.png" alt="Keepnet case study">
-      </div>
-  </div>
-  <div class="flex flex-wrap px-4 fade-in gap-8">
-      <div class="w-full md:w-1/3 my-4">
-            <h4 class="py-1">Keepnet</h4>
-            <p>Vibe coded side project</p>
-      </div>
-      <div class="w-full md:w-7/12 my-4 self-center">
-            <h2 class="pb-3">Helping anglers learn from every match</h2>
-            <p class="pb-3">Match anglers have plenty to keep track of, from the weight in their nets to the tactics that worked last time. I designed and built Keepnet as a side project, using AI to turn an idea into a working app that helps anglers log catches, spot patterns and make more informed decisions next time.</p>
-            <div class="flex flex-col items-start mt-2">
+          </div>
+        </div>
+      </article>
+      <article class="mb-8 md:mb-12">
+        <div class="fade-in bg-surface border-subtle rounded-6xl overflow-hidden">
+          <img class="w-full" src="imgs/keepnet-case.png" alt="Keepnet case study">
+        </div>
+        <div class="fade-in mt-3 md:mt-5 flex flex-col md:flex-row gap-2 md:gap-5">
+          <div class="md:w-1/3 shrink-0">
+            <p class="type-eyebrow">Keepnet</p>
+            <p class="type-role">Vibe coded side project</p>
+          </div>
+          <div class="md:flex-1">
+            <h2 class="type-project mb-2">Helping anglers learn from every match</h2>
+            <p>Match anglers have plenty to keep track of, from the weight in their nets to the tactics that worked last time. I designed and built Keepnet as a side project, using AI to turn an idea into a working app that helps anglers log catches, spot patterns and make more informed decisions next time.</p>
+            <div class="btn-group mt-3">
               <a class="btn btn-primary btn-arrow" href="https://keepnetapp.com">Check it out
-                <svg class="arrow-icon" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g class="arrow-head">
-                      <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
-                    </g>
-                    <g class="arrow-body">
-                      <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
-                    </g>
-                  </svg>
+                <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g class="arrow-head">
+                    <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
+                  </g>
+                  <g class="arrow-body">
+                    <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
+                  </g>
+                </svg>
               </a>
             </div>
-      </div>
-  </div>  
-</div>
+          </div>
+        </div>
+      </article>
 
-<!--Adherium-->
-  <div class="max-w-6xl mx-auto mb-5">
-    <div class="flex flex-wrap work work-desc rounded-5xl fade-in visible mb-5">
-      <div class="w-full md:w-1/2 my-4 self-center mb-5">
-            <h2 class="pb-3">Helping people with asthma build healthier habits</h2>
-            <p class="pb-3">Over the course of 4 months, I led the design of an experience shaped by behavioural insights, using gentle prompts to help people manage their condition more easily and get back to living life on their terms. The result: healthier routines for patients and clearer value for the business through improved adherence and engagement.</p>
-              <a class="mt-2 btn btn-primary btn-arrow" href="hailie.html">Read case study  
-                  <svg class="arrow-icon" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g class="arrow-head">
-                      <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
-                    </g>
-                    <g class="arrow-body">
-                      <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
-                    </g>
-                  </svg>
-                </a>
-      </div>
-      <div class="w-full md:w-1/2 flex items-center">
-            <img class="mx-auto w-full" src="imgs/adherium-case.png" alt="Adherium case study">
-      </div>
-    </div>
-  </div>
-
-<!--Xero-->
-  <div class="max-w-6xl mx-auto mb-5">
-    <div class="flex flex-wrap work work-desc rounded-5xl fade-in visible mb-5">
-      <div class="w-full md:w-1/2 my-4 self-center mb-5">
-            <h2 class="pb-3">Making Personal Tax less taxing for accountants at crunch time</h2>
-            <p class="pb-3">After extensive user testing and heuristic analysis, I designed key updates to improve the usability as well as setting out a roadmap to push the experience beyond the ordinary.</p>
-              <a target="_blank" class="mt-2 btn btn-light inline-flex items-center" href="https://www.youtube.com/watch?v=V1XKoRJbDMM&t=6798s">Xerocon launch 
-                <svg class="ml-2" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
+      <div class="flex flex-col gap-3 md:gap-5 mb-8 md:mb-12">
+        <article class="work fade-in rounded-4xl p-3 md:p-5 flex flex-col md:flex-row md:items-center gap-4 md:gap-5">
+          <div class="md:w-1/2">
+            <h2 class="type-project mb-2">Helping people with asthma build healthier habits</h2>
+            <p>Over the course of 4 months, I led the design of an experience shaped by behavioural insights, using gentle prompts to help people manage their condition more easily and get back to living life on their terms. The result: healthier routines for patients and clearer value for the business through improved adherence and engagement.</p>
+            <div class="btn-group mt-3">
+              <a class="btn btn-primary btn-arrow" href="hailie.html">Read case study
+                <svg class="arrow-icon" aria-hidden="true" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g class="arrow-head">
+                    <path d="M1 1C4.5 4 5 4.38484 5 4.5C5 4.61516 4.5 5 1 8" stroke="currentColor" stroke-width="2"/>
+                  </g>
+                  <g class="arrow-body">
+                    <path d="M3.5 4.5H0" stroke="currentColor" stroke-width="2"/>
+                  </g>
+                </svg>
               </a>
-      </div>
-      <div class="w-full md:w-1/2 flex items-center">
-            <img class="mx-auto w-full" src="imgs/casestudy-xero2.png" alt="Xero case study">
-      </div>
-    </div>
-  </div>
-
-<!--Apple watch-->
-  <div class="max-w-6xl mx-auto mt-5">
-    <div class="work flex flex-wrap work-desc rounded-5xl mb-5 fade-in">
-      <div class="w-full md:w-1/2 my-4 self-center">
-            <h2 class="pb-2">Exploring how an Apple Watch could to help someone perform CPR</h2>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img class="w-full" src="imgs/adherium-case.png" alt="Adherium case study">
+          </div>
+        </article>
+        <article class="work fade-in rounded-4xl p-3 md:p-5 flex flex-col md:flex-row md:items-center gap-4 md:gap-5">
+          <div class="md:w-1/2">
+            <h2 class="type-project mb-2">Making Personal Tax less taxing for accountants at crunch time</h2>
+            <p>After extensive user testing and heuristic analysis, I designed key updates to improve the usability as well as setting out a roadmap to push the experience beyond the ordinary.</p>
+            <div class="btn-group mt-3">
+              <a target="_blank" class="btn btn-light" href="https://www.youtube.com/watch?v=V1XKoRJbDMM&t=6798s">Xerocon launch
+                <svg class="ml-2" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img class="w-full" src="imgs/casestudy-xero2.png" alt="Xero case study">
+          </div>
+        </article>
+        <article class="work fade-in rounded-4xl p-3 md:p-5 flex flex-col md:flex-row md:items-center gap-4 md:gap-5">
+          <div class="md:w-1/2">
+            <h2 class="type-project mb-2">Exploring how an Apple Watch could to help someone perform CPR</h2>
             <p>Every minute counts when someone has a cardiac arrest. In this side project, I explored how smartwatch technology could help anyone to recognise a cardiac arrest and perform effective CPR.</p>
+          </div>
+          <div class="md:w-1/2">
+            <img class="w-full" src="imgs/casestudy-cpr.png" alt="CPR case study">
+          </div>
+        </article>
       </div>
-      <div class="w-full md:w-1/2 flex items-center">
-            <img class="mx-auto w-full" src="imgs/casestudy-cpr.png" alt="CPR case study">
-      </div>
+      </section>
+
+      <section class="mb-5" aria-labelledby="statement-title">
+        <h2 id="statement-title" class="type-statement">Part designer, part strategist, and part operations. Let me bring <span class="underline-sketch1">more</span> than good design to <span class="underline-sketch2">your</span> team.</h2>
+        <p class="mt-2">I look for ways to create efficiencies in strategies and workflows with the aim of boosting those around me. My mind strives to understand and conceptualise the best way forward for businesses, enabling me to take things from napkin sketch to shipped product.</p>
+      </section>
+
     </div>
   </div>
 
-</section>
-
-<section class='container mx-auto px-4 my-section'>
-  <div class="max-w-6xl mx-auto py-5">
-    <div class="text-left py-5 px-4">
-      <h1 class="mb-4">Part designer, part strategist, and part operations. Let me bring <span class="underline-sketch1">more</span> than good design to <span class="underline-sketch2">your</span> team.</h1>
-      <p class="intro py-2">I look for ways to create efficiencies in strategies and workflows with the aim of boosting those around me. My mind strives to understand and conceptualise the best way forward for businesses, enabling me to take things from napkin sketch to shipped product.</p>
-    </div>
-  </div>
-
-<section class="carousel-section mb-section" aria-labelledby="quoteGridTitle">
-  <div class="container mx-auto px-4">
-    <div class="ml-0 md:ml-[8.333%]">
-      <div class="carousel-nav mb-4">
-        <button class="carousel-btn" id="scrollLeft" aria-label="Scroll left">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-          </svg>
-        </button>
-        <button class="carousel-btn" id="scrollRight" aria-label="Scroll right">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </button>
+  <section class="carousel-section mb-8 md:mb-12" aria-label="Testimonials">
+    <div class="px-3">
+      <div class="mx-auto w-full max-w-content">
+        <div class="carousel-nav mb-4">
+          <button class="carousel-btn" id="scrollLeft" aria-label="Scroll left">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="carousel-btn" id="scrollRight" aria-label="Scroll right">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="carousel-overflow-wrapper">
-    <div class="cards-viewport-container">
-      <div class="cards-viewport" id="cardsViewport">
-        <div class="cards-track">
+    <div class="carousel-overflow-wrapper">
+      <div class="cards-viewport-container">
+        <div class="cards-viewport" id="cardsViewport">
+          <div class="cards-track">
         <!-- Card -->
         <div class="card-wrap">
-          <article class="card card-quote h-full bg-gray-100 border-0 rounded-5xl p-5">
+          <article class="card card-quote h-full p-3 md:p-5">
             <div class="pb-3 overflow-hidden">
               <img src="imgs/pd-design.jpg" alt="" class="rounded-2xl avatar-36">
             </div>
@@ -270,11 +244,11 @@
                 "Matt's enthusiasm to promote all things behavioural was infectious and his sense of fun while doing so made our team so much stronger. Matt's ability to question the status quo and push beyond mediocre to reach a delightful design solution which has an effect. Matt was never afraid to call out lazy thinking or dispute an idea until it proves itself to be the best way forward and, for me, that is a sign of a great designer."
               </p>
             </div>
-            <div class="bg-gray-100 border-0 pt-0">
+            <div>
               <div class="flex items-center gap-2">
                 <div>
-                  <div class="font-semibold">Paul Davies</div>
-                  <small class="text-gray-500">Behavioural Psychologist @ Behaviour</small>
+                  <p class="type-role !text-text-primary">Paul Davies</p>
+                  <small class="type-small block">Behavioural Psychologist @ Behaviour</small>
                 </div>
               </div>
             </div>
@@ -283,7 +257,7 @@
 
         <!-- Erin -->
         <div class="card-wrap mt-5">
-          <article class="card card-quote h-full bg-gray-100 border-0 rounded-5xl p-5">
+          <article class="card card-quote h-full p-3 md:p-5">
             <div class="pb-3 overflow-hidden">
               <img src="imgs/erin-headshot.jpeg" alt="" class="rounded-2xl avatar-36">
             </div>
@@ -292,11 +266,11 @@
                 "I've had the pleasure to work for Matt for just a few months, but even then he was able to have a solid impact on the team. He built a solid relationship across Product and Engineering, and partnered to find the best possible solutions for the customer that were shippable in the available time. He also supported some of the design vision concepts in order to drive alignment across the organization."
               </p>
             </div>
-            <div class="bg-gray-100 border-0 pt-0">
+            <div>
               <div class="flex items-center gap-2">
                 <div>
-                  <div class="font-semibold">Erin Casali</div>
-                <small class="text-gray-500">Sr Director of Design @ Xero</small>
+                  <p class="type-role !text-text-primary">Erin Casali</p>
+                <small class="type-small block">Sr Director of Design @ Xero</small>
                 </div>
               </div>
             </div>
@@ -305,7 +279,7 @@
 
         <!-- Jamie -->
         <div class="card-wrap">
-          <article class="card card-quote h-full bg-gray-100 border-0 rounded-5xl p-5">
+          <article class="card card-quote h-full p-3 md:p-5">
             <div class="pb-3 overflow-hidden">
               <img src="imgs/jamie-headshot.jpg" alt="" class="rounded-2xl avatar-36">
             </div>
@@ -314,11 +288,11 @@
                 "Over the years Matt has been my go-to trusted leader who I know will get projects moving, teams motivated, and truly identify what makes customers tick. His deep understanding of behaviour and interaction design makes him a solid choice if you're looking to build a product that customers will love and drive business growth forward exponentially."
               </p>
             </div>
-            <div class="bg-gray-100 border-0 pt-0">
+            <div>
               <div class="flex items-center gap-2">
                 <div>
-                  <div class="font-semibold">Jamie Heuze</div>
-                  <small class="text-gray-500">Design Director @ Monzo</small>
+                  <p class="type-role !text-text-primary">Jamie Heuze</p>
+                  <small class="type-small block">Design Director @ Monzo</small>
                 </div>
               </div>
             </div>
@@ -327,7 +301,7 @@
 
         <!-- Chris -->
         <div class="card-wrap mt-5">
-          <article class="card card-quote h-full bg-gray-100 border-0 rounded-5xl p-5">
+          <article class="card card-quote h-full p-3 md:p-5">
             <div class="pb-3 overflow-hidden">
               <img src="imgs/cg-caboodle.jpg" alt="" class="rounded-2xl avatar-36">
             </div>
@@ -336,126 +310,86 @@
                 "A hugely valued member of the team. I was continually impressed with his willingness to take on any challenge, listen, think outside the box and produce some great work. I have no doubt it's because of this mentality, and his ever-growing thirst for knowledge about all things UX, that he has become such a talented designer. Hope to work with him again in the future."
               </p>
             </div>
-            <div class="bg-gray-100 border-0 pt-0">
+            <div>
               <div class="flex items-center gap-2">
                 <div>
-                  <div class="font-semibold">Chris Godby</div>
-                  <small class="text-gray-500">Founder @ Caboodle</small>
+                  <p class="type-role !text-text-primary">Chris Godby</p>
+                  <small class="type-small block">Founder @ Caboodle</small>
                 </div>
               </div>
             </div>
           </article>
         </div>
       </div>
-    </div>
-  </div>
-  </div>
-</section>
-
-<section class="container mx-auto px-4 my-section">
-  <div class="flex flex-wrap">
-    <div class="max-w-6xl mx-auto px-4 w-full">
-      <div class='company mt-5 mb-5'>
-        <div class="company-icon"><img src="imgs/wise-icon.png" alt="" width="80" height="81"></div>
-        <div class="w-full mb-2">
-          <h3 class="mb-2">
-            <span class="underline-sketch1">Wise</span>
-          </h3>
-          <h4 class="mb-1">
-            Staff Product Designer, Feb 2026 - Present
-          </h4>
-          <p>
-            As part Wise's Spend squad, working on Business Expense Management, my role is designing experiences that help Small businesses manage their team spending with clear controls, automated reconcilliation and better visibility over expenses.
         </div>
       </div>
-        <div class='company mt-5 mb-5'>
+    </div>
+  </section>
+
+  <div class="px-3">
+    <div class="mx-auto w-full max-w-content">
+      <section class="mb-8 md:mb-12" aria-label="Experience">
+        <div class="company mb-5 md:mb-7">
+          <div class="company-icon"><img src="imgs/wise-icon.png" alt="" width="80" height="81"></div>
+          <div class="w-full">
+            <h3 class="type-company mb-1"><span class="underline-sketch1">Wise</span></h3>
+            <p class="type-role mb-1">Staff Product Designer, Feb 2026 - Present</p>
+            <p>As part Wise's Spend squad, working on Business Expense Management, my role is designing experiences that help Small businesses manage their team spending with clear controls, automated reconcilliation and better visibility over expenses.</p>
+          </div>
+        </div>
+        <div class="company mb-5 md:mb-7">
           <div class="company-icon"><img src="imgs/monzo-icon.png" alt="" width="80" height="81"></div>
-          <div class="w-full mb-2">
-            <h3 class="mb-2">
-              <span class="circle-sketch">Monzo</span>
-            </h3>
-            <h4 class="mb-1">
-              Lead Product Designer, Nov 2024 - Jan 2026
-            </h4>
-            <p>
-              I was the founding designer on Monzo's Search team, shaping how people discover and use features across the app. I'm currently part the App Evolution team, designing experiences that help people build financial resilience, from making the most of their money on payday to understanding their next step forward.
-            </p>
+          <div class="w-full">
+            <h3 class="type-company mb-1"><span class="circle-sketch">Monzo</span></h3>
+            <p class="type-role mb-1">Lead Product Designer, Nov 2024 - Jan 2026</p>
+            <p>I was the founding designer on Monzo's Search team, shaping how people discover and use features across the app. I'm currently part the App Evolution team, designing experiences that help people build financial resilience, from making the most of their money on payday to understanding their next step forward.</p>
           </div>
         </div>
-      <div class='company mb-5'>
-        <div class="company-icon"><img src="imgs/1p-icon.png" alt="" width="80" height="81"></div>
-        <div class="w-full mb-2">
-          <h3 class="mb-2">
-            <span class="underline-sketch1">1Password</span>
-          </h3>
-          <h4 class="mb-1">
-            Staff Product Designer, Aug 2022 - October 2024
-          </h4>
-          <p>
-            One of the founding designers for Extended Access Management, a new product offering from 1Password, I focused on shaping the product vision while staying hands-on with design and testing new experiences early and often. I also guided a team of skilled product designers, helping set direction and raising the quality of the work to deliver frictionless and delightful experiences.
-          </p>
+        <div class="company mb-5 md:mb-7">
+          <div class="company-icon"><img src="imgs/1p-icon.png" alt="" width="80" height="81"></div>
+          <div class="w-full">
+            <h3 class="type-company mb-1"><span class="underline-sketch1">1Password</span></h3>
+            <p class="type-role mb-1">Staff Product Designer, Aug 2022 - October 2024</p>
+            <p>One of the founding designers for Extended Access Management, a new product offering from 1Password, I focused on shaping the product vision while staying hands-on with design and testing new experiences early and often. I also guided a team of skilled product designers, helping set direction and raising the quality of the work to deliver frictionless and delightful experiences.</p>
+          </div>
         </div>
-      </div>
-      <div class='company mb-5'>
-        <div class="company-icon"><img src="imgs/xero-icon.png" alt="" width="80" height="81"></div>
-        <div class="w-full mb-2">
-          <h3 class="mb-2">
-            <span class="underline-sketch2">Xero</span>
-          </h3>
-          <h4 class="mb-1">
-            Senior Product Designer, Nov 2021 - Jul 2022
-          </h4>
-          <p>
-            I was responsible for modernising the aesthetic and improving the experience of the Personal Tax product within <a target="_blank" href="https://www.xero.com/uk/xero-tax/">Xero Tax</a>. I also contributed clarifying the roadmap for the Tax portfolio, a foundational piece to set the strategy for the mid to long term.
-          </p>
+        <div class="company mb-5 md:mb-7">
+          <div class="company-icon"><img src="imgs/xero-icon.png" alt="" width="80" height="81"></div>
+          <div class="w-full">
+            <h3 class="type-company mb-1"><span class="underline-sketch2">Xero</span></h3>
+            <p class="type-role mb-1">Senior Product Designer, Nov 2021 - Jul 2022</p>
+            <p>I was responsible for modernising the aesthetic and improving the experience of the Personal Tax product within <a target="_blank" href="https://www.xero.com/uk/xero-tax/">Xero Tax</a>. I also contributed clarifying the roadmap for the Tax portfolio, a foundational piece to set the strategy for the mid to long term.</p>
+          </div>
         </div>
-      </div>
-
-      <div class='company mb-5'>
+        <div class="company mb-5 md:mb-7">
           <div class="company-icon"><img src="imgs/zoopla-icon.png" alt="" width="80" height="81"></div>
-          <div class="w-full mb-2">
-            <h3 class="mb-2">
-              <span class="circle-sketch">Zoopla</span>
-            </h3>
-            <h4 class="mb-1">
-              Senior Product Designer, May 2020 - Nov 2021
-            </h4>
-            <p>
-              I designed the search and discovery experience at <a target="_blank" href="https://www.zoopla.co.uk/">Zoopla</a>, making it easier for people to find their next home. I led the redesign of the homepage, creating clearer paths into search and exploration. I also contributed to the Zoopla Design System and supported major tech migrations, ensuring consistency and quality across the product.
-            </p>
+          <div class="w-full">
+            <h3 class="type-company mb-1"><span class="circle-sketch">Zoopla</span></h3>
+            <p class="type-role mb-1">Senior Product Designer, May 2020 - Nov 2021</p>
+            <p>I designed the search and discovery experience at <a target="_blank" href="https://www.zoopla.co.uk/">Zoopla</a>, making it easier for people to find their next home. I led the redesign of the homepage, creating clearer paths into search and exploration. I also contributed to the Zoopla Design System and supported major tech migrations, ensuring consistency and quality across the product.</p>
           </div>
-      </div>
-
-      <div class='company mb-5'>
+        </div>
+        <div class="company mb-5 md:mb-7">
           <div class="company-icon"><img src="imgs/pwc-icon.png" alt="" width="80" height="81"></div>
-          <div class="w-full mb-2">
-            <h3 class="mb-2">
-              <span class="highlight-sketch">PwC</span>
-            </h3>
-            <h4 class="mb-1">
-              Senior Product Designer, Jun 2019 - May 2020
-            </h4>
-            <p>
-            As part of <a target="_blank" href="https://www.pwc.com/us/en/services/consulting/business-transformation/experience-center.html">PWC's Experience Centre</a> team in London. I helped businesses understand what makes their customer tick in order to tackle major problems with simple solutions.
-            </p>
+          <div class="w-full">
+            <h3 class="type-company mb-1"><span class="highlight-sketch">PwC</span></h3>
+            <p class="type-role mb-1">Senior Product Designer, Jun 2019 - May 2020</p>
+            <p>As part of <a target="_blank" href="https://www.pwc.com/us/en/services/consulting/business-transformation/experience-center.html">PWC's Experience Centre</a> team in London. I helped businesses understand what makes their customer tick in order to tackle major problems with simple solutions.</p>
           </div>
-      </div>
-
-      <div class='flex flex-wrap mb-5'>
-          <div class="w-full mb-2">
-            <p class="pb-2">Previous roles include Behavioural Design Team Lead at design consultancy Big Radical and Design Lead at Etch UK, both part of <a target="_blank" href="https://www.etchuk.com/">Etch Group</a>.</p>
-            <p class="pb-2">I will forever be grateful to Nathan and Chris for taking a chance on me and showing me the ropes as a Junior Designer at 3Degrees all those years ago.</p>
-          </div>
-      </div>
-
+        </div>
+        <div class="space-y-2">
+          <p>Previous roles include Behavioural Design Team Lead at design consultancy Big Radical and Design Lead at Etch UK, both part of <a target="_blank" href="https://www.etchuk.com/">Etch Group</a>.</p>
+          <p>I will forever be grateful to Nathan and Chris for taking a chance on me and showing me the ropes as a Junior Designer at 3Degrees all those years ago.</p>
+        </div>
+      </section>
     </div>
   </div>
-</section>
+</main>
 
-<footer class="container mx-auto px-4">
-    <div class="max-w-6xl mx-auto border-t pt-4 border-gray-300">
-        <p class="mb-5">This site is ever evolving, I'll get to adding more detailed case studies soon. I hope.</p>   
-    </div>
+<footer class="px-3">
+  <div class="mx-auto w-full max-w-content border-t border-line pt-4 pb-5">
+    <p class="type-small">This site is ever evolving, I'll get to adding more detailed case studies soon. I hope.</p>
+  </div>
 </footer>
 
 <script>

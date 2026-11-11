@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html"],
-  safelist: [
-    'monzo-link',
-  ],
   theme: {
     maxWidth: {
       none: 'none',
@@ -16,7 +13,8 @@ module.exports = {
       '3xl': '48rem',
       '4xl': '56rem',
       '5xl': '64rem',
-      '6xl': '72rem',  // Maximum content width - nothing larger available
+      '6xl': '72rem',
+      content: '55rem',  // 880px main column shared by header, intro and body
       full: '100%',
       min: 'min-content',
       max: 'max-content',
@@ -31,30 +29,35 @@ module.exports = {
       },
     },
     extend: {
+      // Semantic palette: values live as CSS variables in src/input.css (:root)
       colors: {
+        'text-primary': 'var(--color-text-primary)',
+        'text-secondary': 'var(--color-text-secondary)',
+        canvas: 'var(--color-canvas)',
+        surface: 'var(--color-surface)',
+        line: 'var(--color-line)',
+        accent: 'var(--color-accent)',
+        // Legacy fills used only by the About page principle cards
         mint: '#09C49B',
         teal: '#89DBE6',
         orange: '#F1BC58',
-        'blue-subtle': '#F6F9FC',
-        'brand-purple': '#4F46E5',
-        'brand-purple-dark': '#261CC9',
-        'text-primary': '#1B030A',
-        'text-secondary': '#64748B',
-        'text-heading': 'rgb(54 71 115)',
       },
       fontFamily: {
+        // TT Commons: headings, navigation and buttons. Inter: body copy.
         'bold': ['TTCommonsProBold', 'sans-serif'],
         'demibold': ['TTCommonsProDemiBold', 'sans-serif'],
         'regular': ['TTCommonsProRegular', 'sans-serif'],
-        'sans': ['TTCommonsProRegular', 'sans-serif'],
+        'sans': ['Inter', 'sans-serif'],
       },
       fontSize: {
         'display': '4rem',
         'display-sm': '3rem',
       },
       borderRadius: {
-        '4xl': '1.5rem',
+        'btn': '12px',
+        '4xl': '1.5rem',   // 24px: smaller project surfaces
         '5xl': '2rem',
+        '6xl': '2.5rem',   // 40px: large project-image containers
       },
       backdropBlur: {
         xs: '8px',
